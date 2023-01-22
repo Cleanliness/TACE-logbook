@@ -1,0 +1,2823 @@
+Please cite the following paper when using nnUNet:
+
+Isensee, F., Jaeger, P.F., Kohl, S.A.A. et al. "nnU-Net: a self-configuring method for deep learning-based biomedical image segmentation." Nat Methods (2020). https://doi.org/10.1038/s41592-020-01008-z
+
+
+If you have questions or suggestions, feel free to open an issue at https://github.com/MIC-DKFZ/nnUNet
+
+Overwriting plans only works for the 3d planner. I am setting '--planner2d' to None. This will skip 2d planning and preprocessing.
+pn_088
+pn_003
+pn_099
+pn_029
+pn_122
+pn_116
+pn_077
+pn_048
+pn_035
+pn_028
+pn_119
+pn_108
+pn_075
+pn_101
+pn_052
+pn_015
+pn_016
+pn_078
+pn_013
+pn_062
+pn_040
+pn_112
+pn_047
+pn_098
+pn_079
+pn_061
+pn_069
+pn_059
+pn_103
+pn_030
+pn_063
+pn_007
+pn_135
+pn_010
+pn_115
+pn_113
+pn_046
+pn_104
+pn_131
+pn_109
+pn_102
+pn_124
+pn_072
+pn_053
+pn_123
+pn_006
+pn_023
+pn_037
+pn_136
+pn_034
+pn_083
+pn_081
+pn_100
+pn_089
+pn_002
+pn_085
+pn_127
+pn_125
+pn_137
+pn_111
+pn_042
+pn_074
+pn_019
+pn_049
+pn_070
+pn_064
+pn_022
+pn_093
+pn_066
+pn_041
+pn_091
+pn_130
+pn_012
+pn_058
+pn_011
+pn_036
+pn_132
+pn_120
+pn_068
+pn_060
+pn_121
+pn_107
+pn_140
+pn_126
+pn_065
+pn_045
+pn_134
+pn_026
+pn_038
+pn_118
+pn_084
+pn_117
+pn_129
+pn_097
+pn_090
+pn_056
+pn_027
+pn_133
+pn_032
+pn_001
+pn_057
+pn_128
+pn_105
+pn_044
+pn_017
+pn_020
+pn_114
+pn_087
+pn_138
+pn_142
+pn_021
+pn_033
+pn_139
+pn_024
+pn_082
+pn_086
+
+
+
+ Task606_PNET_transfer
+number of threads:  (8, 8) 
+
+Are we using the nonzero mask for normalization? OrderedDict([(0, False)])
+the median shape of the dataset is  [378.93422562 512.         512.        ]
+the max shape in the dataset is  [527.4183272  748.87634992 748.87634992]
+the min shape in the dataset is  [184.10701838 345.05554724 345.05554724]
+we don't want feature maps smaller than  4  in the bottleneck
+the transposed median shape of the dataset is  [378.93422562 512.         512.        ]
+generating configuration for 3d_fullres
+generating configuration for 3d_lowres
+{0: {'batch_size': 2, 'num_pool_per_axis': [4, 5, 5], 'patch_size': array([112, 160, 128]), 'median_patient_size_in_voxels': array([171, 231, 231]), 'current_spacing': array([3.01009059, 1.98508619, 1.98508619]), 'original_spacing': array([1.35790586, 0.89550799, 0.89550799]), 'do_dummy_2D_data_aug': False, 'pool_op_kernel_sizes': [[2, 2, 2], [2, 2, 2], [2, 2, 2], [2, 2, 2], [1, 2, 2]], 'conv_kernel_sizes': [[3, 3, 3], [3, 3, 3], [3, 3, 3], [3, 3, 3], [3, 3, 3], [3, 3, 3]]}, 1: {'batch_size': 2, 'num_pool_per_axis': [4, 5, 5], 'patch_size': array([112, 160, 128]), 'median_patient_size_in_voxels': array([379, 512, 512]), 'current_spacing': array([1.35790586, 0.89550799, 0.89550799]), 'original_spacing': array([1.35790586, 0.89550799, 0.89550799]), 'do_dummy_2D_data_aug': False, 'pool_op_kernel_sizes': [[2, 2, 2], [2, 2, 2], [2, 2, 2], [2, 2, 2], [1, 2, 2]], 'conv_kernel_sizes': [[3, 3, 3], [3, 3, 3], [3, 3, 3], [3, 3, 3], [3, 3, 3], [3, 3, 3]]}}
+transpose forward [0, 1, 2]
+transpose backward [0, 1, 2]
+{0: {'batch_size': 2, 'num_pool_per_axis': [4, 5, 5], 'patch_size': array([112, 160, 128]), 'median_patient_size_in_voxels': array([180, 226, 226]), 'current_spacing': array([2.71352554, 1.90353129, 1.90353129]), 'original_spacing': array([1.20000005, 0.84179699, 0.84179699]), 'do_dummy_2D_data_aug': False, 'pool_op_kernel_sizes': [[2, 2, 2], [2, 2, 2], [2, 2, 2], [2, 2, 2], [1, 2, 2]], 'conv_kernel_sizes': [[3, 3, 3], [3, 3, 3], [3, 3, 3], [3, 3, 3], [3, 3, 3], [3, 3, 3]]}, 1: {'batch_size': 2, 'num_pool_per_axis': [4, 5, 5], 'patch_size': array([112, 160, 128]), 'median_patient_size_in_voxels': array([406, 512, 511]), 'current_spacing': array([1.20000005, 0.84179699, 0.84179699]), 'original_spacing': array([1.20000005, 0.84179699, 0.84179699]), 'do_dummy_2D_data_aug': False, 'pool_op_kernel_sizes': [[2, 2, 2], [2, 2, 2], [2, 2, 2], [2, 2, 2], [1, 2, 2]], 'conv_kernel_sizes': [[3, 3, 3], [3, 3, 3], [3, 3, 3], [3, 3, 3], [3, 3, 3], [3, 3, 3]]}}
+Initializing to run preprocessing
+npz folder: /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_raw_data_base/nnUNet_cropped_data/Task606_PNET_transfer
+output_folder: /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.31020641, 0.8125    , 0.8125    ]), 'spacing_transposed': array([1.31020641, 0.8125    , 0.8125    ]), 'data.shape (data is transposed)': (1, 396, 512, 512)} 
+after:  {'spacing': array([2.71352554, 1.90353129, 1.90353129]), 'data.shape (data is resampled)': (1, 191, 219, 219)} 
+
+1 1655
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage0/pn_037.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.31305361, 1.03393602, 1.03393602]), 'spacing_transposed': array([1.31305361, 1.03393602, 1.03393602]), 'data.shape (data is transposed)': (1, 443, 512, 512)} 
+after:  {'spacing': array([2.71352554, 1.90353129, 1.90353129]), 'data.shape (data is resampled)': (1, 214, 278, 278)} 
+
+1 265
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage0/pn_038.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.31141818, 0.92895502, 0.92895502]), 'spacing_transposed': array([1.31141818, 0.92895502, 0.92895502]), 'data.shape (data is transposed)': (1, 398, 512, 512)} 
+after:  {'spacing': array([2.71352554, 1.90353129, 1.90353129]), 'data.shape (data is resampled)': (1, 192, 250, 250)} 
+
+1 5605
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage0/pn_040.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.35877478, 0.97656202, 0.97656202]), 'spacing_transposed': array([1.35877478, 0.97656202, 0.97656202]), 'data.shape (data is transposed)': (1, 408, 512, 512)} 
+after:  {'spacing': array([2.71352554, 1.90353129, 1.90353129]), 'data.shape (data is resampled)': (1, 204, 263, 263)} 
+
+1 21
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage0/pn_041.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.31679523, 0.859375  , 0.859375  ]), 'spacing_transposed': array([1.31679523, 0.859375  , 0.859375  ]), 'data.shape (data is transposed)': (1, 403, 512, 512)} 
+after:  {'spacing': array([2.71352554, 1.90353129, 1.90353129]), 'data.shape (data is resampled)': (1, 196, 231, 231)} 
+
+1 3849
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage0/pn_059.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.33488083, 0.9375    , 0.9375    ]), 'spacing_transposed': array([1.33488083, 0.9375    , 0.9375    ]), 'data.shape (data is transposed)': (1, 408, 512, 512)} 
+after:  {'spacing': array([2.71352554, 1.90353129, 1.90353129]), 'data.shape (data is resampled)': (1, 201, 252, 252)} 
+
+1 79
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage0/pn_060.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.30296433, 0.938721  , 0.938721  ]), 'spacing_transposed': array([1.30296433, 0.938721  , 0.938721  ]), 'data.shape (data is transposed)': (1, 402, 512, 512)} 
+after:  {'spacing': array([2.71352554, 1.90353129, 1.90353129]), 'data.shape (data is resampled)': (1, 193, 252, 252)} 
+
+1 82
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage0/pn_061.npz
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([2.77814651, 0.90625   , 0.90625   ]), 'spacing_transposed': array([2.77814651, 0.90625   , 0.90625   ]), 'data.shape (data is transposed)': (1, 189, 512, 512)} 
+after:  {'spacing': array([2.71352554, 1.90353129, 1.90353129]), 'data.shape (data is resampled)': (1, 194, 244, 244)} 
+
+1 878
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage0/pn_062.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.33347833, 0.96435499, 0.96435499]), 'spacing_transposed': array([1.33347833, 0.96435499, 0.96435499]), 'data.shape (data is transposed)': (1, 413, 512, 512)} 
+after:  {'spacing': array([2.71352554, 1.90353129, 1.90353129]), 'data.shape (data is resampled)': (1, 203, 259, 259)} 
+
+1 1768
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage0/pn_088.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.3316102, 0.906982 , 0.906982 ]), 'spacing_transposed': array([1.3316102, 0.906982 , 0.906982 ]), 'data.shape (data is transposed)': (1, 388, 512, 512)} 
+after:  {'spacing': array([2.71352554, 1.90353129, 1.90353129]), 'data.shape (data is resampled)': (1, 190, 244, 244)} 
+
+1 988
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage0/pn_089.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.31481576, 0.89843798, 0.89843798]), 'spacing_transposed': array([1.31481576, 0.89843798, 0.89843798]), 'data.shape (data is transposed)': (1, 385, 512, 512)} 
+after:  {'spacing': array([2.71352554, 1.90353129, 1.90353129]), 'data.shape (data is resampled)': (1, 187, 242, 242)} 
+
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage0/pn_090.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.33138001, 0.88867199, 0.88867199]), 'spacing_transposed': array([1.33138001, 0.88867199, 0.88867199]), 'data.shape (data is transposed)': (1, 381, 512, 512)} 
+after:  {'spacing': array([2.71352554, 1.90353129, 1.90353129]), 'data.shape (data is resampled)': (1, 187, 239, 239)} 
+
+1 46
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage0/pn_091.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.31107128, 0.94970697, 0.94970697]), 'spacing_transposed': array([1.31107128, 0.94970697, 0.94970697]), 'data.shape (data is transposed)': (1, 407, 512, 512)} 
+after:  {'spacing': array([2.71352554, 1.90353129, 1.90353129]), 'data.shape (data is resampled)': (1, 197, 255, 255)} 
+
+1 644
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage0/pn_033.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.38339221, 0.93164098, 0.93164098]), 'spacing_transposed': array([1.38339221, 0.93164098, 0.93164098]), 'data.shape (data is transposed)': (1, 378, 512, 512)} 
+after:  {'spacing': array([2.71352554, 1.90353129, 1.90353129]), 'data.shape (data is resampled)': (1, 193, 251, 251)} 
+
+1 549
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage0/pn_034.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([2.74177647, 0.98754901, 0.98754901]), 'spacing_transposed': array([2.74177647, 0.98754901, 0.98754901]), 'data.shape (data is transposed)': (1, 204, 512, 512)} 
+after:  {'spacing': array([2.71352554, 1.90353129, 1.90353129]), 'data.shape (data is resampled)': (1, 206, 266, 266)} 
+
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage0/pn_035.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([2.68548846, 0.97778302, 0.97778302]), 'spacing_transposed': array([2.68548846, 0.97778302, 0.97778302]), 'data.shape (data is transposed)': (1, 202, 512, 512)} 
+after:  {'spacing': array([2.71352554, 1.90353129, 1.90353129]), 'data.shape (data is resampled)': (1, 200, 263, 263)} 
+
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage0/pn_036.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.31524646, 1.05590796, 1.05590796]), 'spacing_transposed': array([1.31524646, 1.05590796, 1.05590796]), 'data.shape (data is transposed)': (1, 452, 512, 512)} 
+after:  {'spacing': array([2.71352554, 1.90353129, 1.90353129]), 'data.shape (data is resampled)': (1, 219, 284, 284)} 
+
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage0/pn_063.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.25    , 0.703125, 0.703125]), 'spacing_transposed': array([1.25    , 0.703125, 0.703125]), 'data.shape (data is transposed)': (1, 374, 512, 512)} 
+after:  {'spacing': array([2.71352554, 1.90353129, 1.90353129]), 'data.shape (data is resampled)': (1, 172, 189, 189)} 
+
+1 2141
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage0/pn_064.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.36249602, 0.85351598, 0.85351598]), 'spacing_transposed': array([1.36249602, 0.85351598, 0.85351598]), 'data.shape (data is transposed)': (1, 355, 512, 512)} 
+after:  {'spacing': array([2.71352554, 1.90353129, 1.90353129]), 'data.shape (data is resampled)': (1, 178, 230, 230)} 
+
+1 974
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage0/pn_065.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.33600628, 0.79345697, 0.79345697]), 'spacing_transposed': array([1.33600628, 0.79345697, 0.79345697]), 'data.shape (data is transposed)': (1, 340, 512, 512)} 
+after:  {'spacing': array([2.71352554, 1.90353129, 1.90353129]), 'data.shape (data is resampled)': (1, 167, 213, 213)} 
+
+1 1135
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage0/pn_066.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.38610351, 0.89257801, 0.89257801]), 'spacing_transposed': array([1.38610351, 0.89257801, 0.89257801]), 'data.shape (data is transposed)': (1, 361, 512, 512)} 
+after:  {'spacing': array([2.71352554, 1.90353129, 1.90353129]), 'data.shape (data is resampled)': (1, 184, 240, 240)} 
+
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage0/pn_104.npz
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([3.18642426, 0.935938  , 0.935938  ]), 'spacing_transposed': array([3.18642426, 0.935938  , 0.935938  ]), 'data.shape (data is transposed)': (1, 161, 512, 512)} 
+after:  {'spacing': array([2.71352554, 1.90353129, 1.90353129]), 'data.shape (data is resampled)': (1, 189, 252, 252)} 
+
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage0/pn_105.npz
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([4.        , 0.71289062, 0.71289062]), 'spacing_transposed': array([4.        , 0.71289062, 0.71289062]), 'data.shape (data is transposed)': (1, 107, 512, 512)} 
+after:  {'spacing': array([2.71352554, 1.90353129, 1.90353129]), 'data.shape (data is resampled)': (1, 158, 192, 192)} 
+
+1 436
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage0/pn_107.npz
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([2.45864654, 0.6875    , 0.6875    ]), 'spacing_transposed': array([2.45864654, 0.6875    , 0.6875    ]), 'data.shape (data is transposed)': (1, 267, 512, 512)} 
+after:  {'spacing': array([2.71352554, 1.90353129, 1.90353129]), 'data.shape (data is resampled)': (1, 242, 185, 185)} 
+
+1 2726
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage0/pn_108.npz
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([3.        , 0.77929688, 0.77929688]), 'spacing_transposed': array([3.        , 0.77929688, 0.77929688]), 'data.shape (data is transposed)': (1, 159, 512, 512)} 
+after:  {'spacing': array([2.71352554, 1.90353129, 1.90353129]), 'data.shape (data is resampled)': (1, 176, 210, 210)} 
+
+1 611
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage0/pn_126.npz
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([2.5       , 0.60351562, 0.60351562]), 'spacing_transposed': array([2.5       , 0.60351562, 0.60351562]), 'data.shape (data is transposed)': (1, 100, 512, 512)} 
+after:  {'spacing': array([2.71352554, 1.90353129, 1.90353129]), 'data.shape (data is resampled)': (1, 92, 162, 162)} 
+
+1 6365
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage0/pn_127.npz
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([2.68589091, 0.84960902, 0.84960902]), 'spacing_transposed': array([2.68589091, 0.84960902, 0.84960902]), 'data.shape (data is transposed)': (1, 176, 512, 512)} 
+after:  {'spacing': array([2.71352554, 1.90353129, 1.90353129]), 'data.shape (data is resampled)': (1, 174, 229, 229)} 
+
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage0/pn_128.npz
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([2.5       , 0.83203125, 0.83203125]), 'spacing_transposed': array([2.5       , 0.83203125, 0.83203125]), 'data.shape (data is transposed)': (1, 159, 512, 512)} 
+after:  {'spacing': array([2.71352554, 1.90353129, 1.90353129]), 'data.shape (data is resampled)': (1, 146, 224, 224)} 
+
+1 1322
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage0/pn_129.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.31537688, 0.92529303, 0.92529303]), 'spacing_transposed': array([1.31537688, 0.92529303, 0.92529303]), 'data.shape (data is transposed)': (1, 396, 512, 512)} 
+after:  {'spacing': array([2.71352554, 1.90353129, 1.90353129]), 'data.shape (data is resampled)': (1, 192, 249, 249)} 
+
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage0/pn_028.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.31713152, 0.93139601, 0.93139601]), 'spacing_transposed': array([1.31713152, 0.93139601, 0.93139601]), 'data.shape (data is transposed)': (1, 399, 512, 512)} 
+after:  {'spacing': array([2.71352554, 1.90353129, 1.90353129]), 'data.shape (data is resampled)': (1, 194, 251, 251)} 
+
+1 5406
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage0/pn_029.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.30095553, 0.87890601, 0.87890601]), 'spacing_transposed': array([1.30095553, 0.87890601, 0.87890601]), 'data.shape (data is transposed)': (1, 376, 512, 512)} 
+after:  {'spacing': array([2.71352554, 1.90353129, 1.90353129]), 'data.shape (data is resampled)': (1, 180, 236, 236)} 
+
+1 1431
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage0/pn_030.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.3056612 , 0.86914098, 0.86914098]), 'spacing_transposed': array([1.3056612 , 0.86914098, 0.86914098]), 'data.shape (data is transposed)': (1, 434, 512, 512)} 
+after:  {'spacing': array([2.71352554, 1.90353129, 1.90353129]), 'data.shape (data is resampled)': (1, 209, 234, 234)} 
+
+1 864
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage0/pn_032.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.30699027, 0.99731398, 0.99731398]), 'spacing_transposed': array([1.30699027, 0.99731398, 0.99731398]), 'data.shape (data is transposed)': (1, 427, 512, 512)} 
+after:  {'spacing': array([2.71352554, 1.90353129, 1.90353129]), 'data.shape (data is resampled)': (1, 206, 268, 268)} 
+
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage0/pn_074.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.35703695, 0.79296899, 0.79296899]), 'spacing_transposed': array([1.35703695, 0.79296899, 0.79296899]), 'data.shape (data is transposed)': (1, 332, 512, 512)} 
+after:  {'spacing': array([2.71352554, 1.90353129, 1.90353129]), 'data.shape (data is resampled)': (1, 166, 213, 213)} 
+
+1 73
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage0/pn_075.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.19684219, 0.76953101, 0.76953101]), 'spacing_transposed': array([1.19684219, 0.76953101, 0.76953101]), 'data.shape (data is transposed)': (1, 381, 512, 512)} 
+after:  {'spacing': array([2.71352554, 1.90353129, 1.90353129]), 'data.shape (data is resampled)': (1, 168, 207, 207)} 
+
+1 8833
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage0/pn_077.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.39326143, 0.9375    , 0.9375    ]), 'spacing_transposed': array([1.39326143, 0.9375    , 0.9375    ]), 'data.shape (data is transposed)': (1, 376, 512, 512)} 
+after:  {'spacing': array([2.71352554, 1.90353129, 1.90353129]), 'data.shape (data is resampled)': (1, 193, 252, 252)} 
+
+1 3227
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage0/pn_078.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([2.4000001 , 0.80500001, 0.80500001]), 'spacing_transposed': array([2.4000001 , 0.80500001, 0.80500001]), 'data.shape (data is transposed)': (1, 251, 512, 512)} 
+after:  {'spacing': array([2.71352554, 1.90353129, 1.90353129]), 'data.shape (data is resampled)': (1, 222, 217, 217)} 
+
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage0/pn_118.npz
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([3.        , 0.73632812, 0.73632812]), 'spacing_transposed': array([3.        , 0.73632812, 0.73632812]), 'data.shape (data is transposed)': (1, 164, 512, 512)} 
+after:  {'spacing': array([2.71352554, 1.90353129, 1.90353129]), 'data.shape (data is resampled)': (1, 181, 198, 198)} 
+
+1 61
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage0/pn_119.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.25      , 0.70703125, 0.70703125]), 'spacing_transposed': array([1.25      , 0.70703125, 0.70703125]), 'data.shape (data is transposed)': (1, 355, 512, 512)} 
+after:  {'spacing': array([2.71352554, 1.90353129, 1.90353129]), 'data.shape (data is resampled)': (1, 164, 190, 190)} 
+
+1 1097
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage0/pn_120.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([2.82965922, 0.97070301, 0.97070301]), 'spacing_transposed': array([2.82965922, 0.97070301, 0.97070301]), 'data.shape (data is transposed)': (1, 195, 512, 512)} 
+after:  {'spacing': array([2.71352554, 1.90353129, 1.90353129]), 'data.shape (data is resampled)': (1, 203, 261, 261)} 
+
+1 5962
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage0/pn_121.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.48778224, 0.9375    , 0.9375    ]), 'spacing_transposed': array([1.48778224, 0.9375    , 0.9375    ]), 'data.shape (data is transposed)': (1, 339, 512, 512)} 
+after:  {'spacing': array([2.71352554, 1.90353129, 1.90353129]), 'data.shape (data is resampled)': (1, 186, 252, 252)} 
+
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage0/pn_013.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.30630791, 1.00463903, 1.00463903]), 'spacing_transposed': array([1.30630791, 1.00463903, 1.00463903]), 'data.shape (data is transposed)': (1, 430, 512, 512)} 
+after:  {'spacing': array([2.71352554, 1.90353129, 1.90353129]), 'data.shape (data is resampled)': (1, 207, 270, 270)} 
+
+1 396
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage0/pn_015.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.30163181, 0.963135  , 0.963135  ]), 'spacing_transposed': array([1.30163181, 0.963135  , 0.963135  ]), 'data.shape (data is transposed)': (1, 412, 512, 512)} 
+after:  {'spacing': array([2.71352554, 1.90353129, 1.90353129]), 'data.shape (data is resampled)': (1, 198, 259, 259)} 
+
+1 6153
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage0/pn_016.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([2.70341039, 0.93261701, 0.93261701]), 'spacing_transposed': array([2.70341039, 0.93261701, 0.93261701]), 'data.shape (data is transposed)': (1, 193, 512, 512)} 
+after:  {'spacing': array([2.71352554, 1.90353129, 1.90353129]), 'data.shape (data is resampled)': (1, 192, 251, 251)} 
+
+1 117
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage0/pn_017.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.33749998, 0.83862299, 0.83862299]), 'spacing_transposed': array([1.33749998, 0.83862299, 0.83862299]), 'data.shape (data is transposed)': (1, 359, 512, 512)} 
+after:  {'spacing': array([2.71352554, 1.90353129, 1.90353129]), 'data.shape (data is resampled)': (1, 177, 226, 226)} 
+
+1 5009
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage0/pn_053.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.32014322, 1.04492199, 1.04492199]), 'spacing_transposed': array([1.32014322, 1.04492199, 1.04492199]), 'data.shape (data is transposed)': (1, 447, 512, 512)} 
+after:  {'spacing': array([2.71352554, 1.90353129, 1.90353129]), 'data.shape (data is resampled)': (1, 217, 281, 281)} 
+
+1 5096
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage0/pn_056.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.31013811, 1.01684594, 1.01684594]), 'spacing_transposed': array([1.31013811, 1.01684594, 1.01684594]), 'data.shape (data is transposed)': (1, 435, 512, 512)} 
+after:  {'spacing': array([2.71352554, 1.90353129, 1.90353129]), 'data.shape (data is resampled)': (1, 210, 274, 274)} 
+
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage0/pn_057.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.32040524, 0.97460902, 0.97460902]), 'spacing_transposed': array([1.32040524, 0.97460902, 0.97460902]), 'data.shape (data is transposed)': (1, 451, 512, 512)} 
+after:  {'spacing': array([2.71352554, 1.90353129, 1.90353129]), 'data.shape (data is resampled)': (1, 219, 262, 262)} 
+
+1 3297
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage0/pn_058.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.32323408, 0.80859399, 0.80859399]), 'spacing_transposed': array([1.32323408, 0.80859399, 0.80859399]), 'data.shape (data is transposed)': (1, 369, 512, 512)} 
+after:  {'spacing': array([2.71352554, 1.90353129, 1.90353129]), 'data.shape (data is resampled)': (1, 180, 217, 217)} 
+
+1 1860
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage0/pn_100.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.31408679, 0.78515601, 0.78515601]), 'spacing_transposed': array([1.31408679, 0.78515601, 0.78515601]), 'data.shape (data is transposed)': (1, 373, 512, 512)} 
+after:  {'spacing': array([2.71352554, 1.90353129, 1.90353129]), 'data.shape (data is resampled)': (1, 181, 211, 211)} 
+
+1 2546
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage0/pn_101.npz
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([2.70734286, 0.87646502, 0.87646502]), 'spacing_transposed': array([2.70734286, 0.87646502, 0.87646502]), 'data.shape (data is transposed)': (1, 181, 512, 512)} 
+after:  {'spacing': array([2.71352554, 1.90353129, 1.90353129]), 'data.shape (data is resampled)': (1, 181, 236, 236)} 
+
+1 367
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage0/pn_102.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.30325401, 1.015625  , 1.015625  ]), 'spacing_transposed': array([1.30325401, 1.015625  , 1.015625  ]), 'data.shape (data is transposed)': (1, 435, 512, 512)} 
+after:  {'spacing': array([2.71352554, 1.90353129, 1.90353129]), 'data.shape (data is resampled)': (1, 209, 273, 273)} 
+
+1 233
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage0/pn_103.npz
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([4.79017687, 0.94921899, 0.94921899]), 'spacing_transposed': array([4.79017687, 0.94921899, 0.94921899]), 'data.shape (data is transposed)': (1, 109, 512, 512)} 
+after:  {'spacing': array([2.71352554, 1.90353129, 1.90353129]), 'data.shape (data is resampled)': (1, 192, 255, 255)} 
+
+1 671
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage0/pn_138.npz
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([3.26185775, 0.89218801, 0.89218801]), 'spacing_transposed': array([3.26185775, 0.89218801, 0.89218801]), 'data.shape (data is transposed)': (1, 154, 512, 512)} 
+after:  {'spacing': array([2.71352554, 1.90353129, 1.90353129]), 'data.shape (data is resampled)': (1, 185, 240, 240)} 
+
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage0/pn_139.npz
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([2.73475361, 0.828125  , 0.828125  ]), 'spacing_transposed': array([2.73475361, 0.828125  , 0.828125  ]), 'data.shape (data is transposed)': (1, 171, 512, 512)} 
+after:  {'spacing': array([2.71352554, 1.90353129, 1.90353129]), 'data.shape (data is resampled)': (1, 172, 223, 223)} 
+
+1 1828
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage0/pn_140.npz
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([4.        , 0.71484375, 0.71484375]), 'spacing_transposed': array([4.        , 0.71484375, 0.71484375]), 'data.shape (data is transposed)': (1, 107, 512, 512)} 
+after:  {'spacing': array([2.71352554, 1.90353129, 1.90353129]), 'data.shape (data is resampled)': (1, 158, 192, 192)} 
+
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage0/pn_142.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.30227184, 0.83252001, 0.83252001]), 'spacing_transposed': array([1.30227184, 0.83252001, 0.83252001]), 'data.shape (data is transposed)': (1, 357, 512, 512)} 
+after:  {'spacing': array([2.71352554, 1.90353129, 1.90353129]), 'data.shape (data is resampled)': (1, 171, 224, 224)} 
+
+1 1679
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage0/pn_019.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.3335135, 0.992432 , 0.992432 ]), 'spacing_transposed': array([1.3335135, 0.992432 , 0.992432 ]), 'data.shape (data is transposed)': (1, 425, 512, 512)} 
+after:  {'spacing': array([2.71352554, 1.90353129, 1.90353129]), 'data.shape (data is resampled)': (1, 209, 267, 267)} 
+
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage0/pn_020.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.3665055 , 0.94921899, 0.94921899]), 'spacing_transposed': array([1.3665055 , 0.94921899, 0.94921899]), 'data.shape (data is transposed)': (1, 393, 512, 512)} 
+after:  {'spacing': array([2.71352554, 1.90353129, 1.90353129]), 'data.shape (data is resampled)': (1, 198, 255, 255)} 
+
+1 377
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage0/pn_021.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.19717658, 0.82031202, 0.82031202]), 'spacing_transposed': array([1.19717658, 0.82031202, 0.82031202]), 'data.shape (data is transposed)': (1, 426, 512, 512)} 
+after:  {'spacing': array([2.71352554, 1.90353129, 1.90353129]), 'data.shape (data is resampled)': (1, 188, 221, 221)} 
+
+1 460
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage0/pn_022.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.47995591, 0.97656202, 0.97656202]), 'spacing_transposed': array([1.47995591, 0.97656202, 0.97656202]), 'data.shape (data is transposed)': (1, 356, 512, 512)} 
+after:  {'spacing': array([2.71352554, 1.90353129, 1.90353129]), 'data.shape (data is resampled)': (1, 194, 263, 263)} 
+
+1 828
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage0/pn_079.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.43689895, 0.94531202, 0.94531202]), 'spacing_transposed': array([1.43689895, 0.94531202, 0.94531202]), 'data.shape (data is transposed)': (1, 361, 512, 512)} 
+after:  {'spacing': array([2.71352554, 1.90353129, 1.90353129]), 'data.shape (data is resampled)': (1, 191, 254, 254)} 
+
+1 141
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage0/pn_081.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.19656157, 0.79882801, 0.79882801]), 'spacing_transposed': array([1.19656157, 0.79882801, 0.79882801]), 'data.shape (data is transposed)': (1, 350, 512, 512)} 
+after:  {'spacing': array([2.71352554, 1.90353129, 1.90353129]), 'data.shape (data is resampled)': (1, 154, 215, 215)} 
+
+1 739
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage0/pn_082.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.19671237, 0.72851598, 0.72851598]), 'spacing_transposed': array([1.19671237, 0.72851598, 0.72851598]), 'data.shape (data is transposed)': (1, 366, 512, 512)} 
+after:  {'spacing': array([2.71352554, 1.90353129, 1.90353129]), 'data.shape (data is resampled)': (1, 161, 196, 196)} 
+
+1 2755
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage0/pn_083.npz
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([2.69870663, 0.85156202, 0.85156202]), 'spacing_transposed': array([2.69870663, 0.85156202, 0.85156202]), 'data.shape (data is transposed)': (1, 176, 512, 512)} 
+after:  {'spacing': array([2.71352554, 1.90353129, 1.90353129]), 'data.shape (data is resampled)': (1, 175, 229, 229)} 
+
+1 466
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage0/pn_114.npz
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([2.        , 0.62890625, 0.62890625]), 'spacing_transposed': array([2.        , 0.62890625, 0.62890625]), 'data.shape (data is transposed)': (1, 327, 512, 512)} 
+after:  {'spacing': array([2.71352554, 1.90353129, 1.90353129]), 'data.shape (data is resampled)': (1, 241, 169, 169)} 
+
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage0/pn_115.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([2.65253496, 1.30981398, 1.30981398]), 'spacing_transposed': array([2.65253496, 1.30981398, 1.30981398]), 'data.shape (data is transposed)': (1, 270, 512, 512)} 
+after:  {'spacing': array([2.71352554, 1.90353129, 1.90353129]), 'data.shape (data is resampled)': (1, 264, 352, 352)} 
+
+1 1493
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage0/pn_116.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([2.4000001 , 0.87699997, 0.87699997]), 'spacing_transposed': array([2.4000001 , 0.87699997, 0.87699997]), 'data.shape (data is transposed)': (1, 196, 512, 512)} 
+after:  {'spacing': array([2.71352554, 1.90353129, 1.90353129]), 'data.shape (data is resampled)': (1, 173, 236, 236)} 
+
+1 2666
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage0/pn_117.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.38323545, 0.87890601, 0.87890601]), 'spacing_transposed': array([1.38323545, 0.87890601, 0.87890601]), 'data.shape (data is transposed)': (1, 357, 512, 512)} 
+after:  {'spacing': array([2.71352554, 1.90353129, 1.90353129]), 'data.shape (data is resampled)': (1, 182, 236, 236)} 
+
+1 1890
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage0/pn_023.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.33871126, 0.859375  , 0.859375  ]), 'spacing_transposed': array([1.33871126, 0.859375  , 0.859375  ]), 'data.shape (data is transposed)': (1, 368, 512, 512)} 
+after:  {'spacing': array([2.71352554, 1.90353129, 1.90353129]), 'data.shape (data is resampled)': (1, 182, 231, 231)} 
+
+1 2484
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage0/pn_024.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([2.69192219, 1.08276403, 1.08276403]), 'spacing_transposed': array([2.69192219, 1.08276403, 1.08276403]), 'data.shape (data is transposed)': (1, 223, 512, 512)} 
+after:  {'spacing': array([2.71352554, 1.90353129, 1.90353129]), 'data.shape (data is resampled)': (1, 221, 291, 291)} 
+
+1 124
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage0/pn_026.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.28830099, 0.92407203, 0.92407203]), 'spacing_transposed': array([1.28830099, 0.92407203, 0.92407203]), 'data.shape (data is transposed)': (1, 396, 512, 512)} 
+after:  {'spacing': array([2.71352554, 1.90353129, 1.90353129]), 'data.shape (data is resampled)': (1, 188, 249, 249)} 
+
+1 150
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage0/pn_027.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.32839775, 1.015625  , 1.015625  ]), 'spacing_transposed': array([1.32839775, 1.015625  , 1.015625  ]), 'data.shape (data is transposed)': (1, 435, 512, 512)} 
+after:  {'spacing': array([2.71352554, 1.90353129, 1.90353129]), 'data.shape (data is resampled)': (1, 213, 273, 273)} 
+
+1 2566
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage0/pn_042.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.30726922, 0.906982  , 0.906982  ]), 'spacing_transposed': array([1.30726922, 0.906982  , 0.906982  ]), 'data.shape (data is transposed)': (1, 388, 512, 512)} 
+after:  {'spacing': array([2.71352554, 1.90353129, 1.90353129]), 'data.shape (data is resampled)': (1, 187, 244, 244)} 
+
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage0/pn_044.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.31658089, 0.83203101, 0.83203101]), 'spacing_transposed': array([1.31658089, 0.83203101, 0.83203101]), 'data.shape (data is transposed)': (1, 392, 512, 512)} 
+after:  {'spacing': array([2.71352554, 1.90353129, 1.90353129]), 'data.shape (data is resampled)': (1, 190, 224, 224)} 
+
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage0/pn_045.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([2.68825269, 0.97656298, 0.97656298]), 'spacing_transposed': array([2.68825269, 0.97656298, 0.97656298]), 'data.shape (data is transposed)': (1, 254, 512, 512)} 
+after:  {'spacing': array([2.71352554, 1.90353129, 1.90353129]), 'data.shape (data is resampled)': (1, 252, 263, 263)} 
+
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage0/pn_046.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.1970371 , 0.84765601, 0.84765601]), 'spacing_transposed': array([1.1970371 , 0.84765601, 0.84765601]), 'data.shape (data is transposed)': (1, 406, 512, 512)} 
+after:  {'spacing': array([2.71352554, 1.90353129, 1.90353129]), 'data.shape (data is resampled)': (1, 179, 228, 228)} 
+
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage0/pn_084.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.30839634, 0.94604498, 0.94604498]), 'spacing_transposed': array([1.30839634, 0.94604498, 0.94604498]), 'data.shape (data is transposed)': (1, 405, 512, 512)} 
+after:  {'spacing': array([2.71352554, 1.90353129, 1.90353129]), 'data.shape (data is resampled)': (1, 195, 254, 254)} 
+
+1 8
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage0/pn_085.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.30359542, 0.97656202, 0.97656202]), 'spacing_transposed': array([1.30359542, 0.97656202, 0.97656202]), 'data.shape (data is transposed)': (1, 418, 512, 512)} 
+after:  {'spacing': array([2.71352554, 1.90353129, 1.90353129]), 'data.shape (data is resampled)': (1, 201, 263, 263)} 
+
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage0/pn_086.npz
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([2.74424505, 0.83129901, 0.83129901]), 'spacing_transposed': array([2.74424505, 0.83129901, 0.83129901]), 'data.shape (data is transposed)': (1, 172, 512, 512)} 
+after:  {'spacing': array([2.71352554, 1.90353129, 1.90353129]), 'data.shape (data is resampled)': (1, 174, 224, 224)} 
+
+1 2202
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage0/pn_087.npz
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([2.       , 0.6640625, 0.6640625]), 'spacing_transposed': array([2.       , 0.6640625, 0.6640625]), 'data.shape (data is transposed)': (1, 211, 512, 512)} 
+after:  {'spacing': array([2.71352554, 1.90353129, 1.90353129]), 'data.shape (data is resampled)': (1, 156, 179, 179)} 
+
+1 9040
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage0/pn_130.npz
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([5.        , 0.75976562, 0.75976562]), 'spacing_transposed': array([5.        , 0.75976562, 0.75976562]), 'data.shape (data is transposed)': (1, 102, 512, 512)} 
+after:  {'spacing': array([2.71352554, 1.90353129, 1.90353129]), 'data.shape (data is resampled)': (1, 188, 204, 204)} 
+
+1 1018
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage0/pn_131.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([2.5       , 0.91601562, 0.91601562]), 'spacing_transposed': array([2.5       , 0.91601562, 0.91601562]), 'data.shape (data is transposed)': (1, 183, 512, 512)} 
+after:  {'spacing': array([2.71352554, 1.90353129, 1.90353129]), 'data.shape (data is resampled)': (1, 169, 246, 246)} 
+
+1 1937
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage0/pn_132.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([2.68817759, 0.96557599, 0.96557599]), 'spacing_transposed': array([2.68817759, 0.96557599, 0.96557599]), 'data.shape (data is transposed)': (1, 199, 512, 512)} 
+after:  {'spacing': array([2.71352554, 1.90353129, 1.90353129]), 'data.shape (data is resampled)': (1, 197, 260, 260)} 
+
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage0/pn_133.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([2.77460408, 0.98632801, 0.98632801]), 'spacing_transposed': array([2.77460408, 0.98632801, 0.98632801]), 'data.shape (data is transposed)': (1, 204, 512, 512)} 
+after:  {'spacing': array([2.71352554, 1.90353129, 1.90353129]), 'data.shape (data is resampled)': (1, 209, 265, 265)} 
+
+1 9
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage0/pn_007.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.30351853, 0.92529303, 0.92529303]), 'spacing_transposed': array([1.30351853, 0.92529303, 0.92529303]), 'data.shape (data is transposed)': (1, 396, 512, 512)} 
+after:  {'spacing': array([2.71352554, 1.90353129, 1.90353129]), 'data.shape (data is resampled)': (1, 190, 249, 249)} 
+
+1 328
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage0/pn_010.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.37537074, 0.89843798, 0.89843798]), 'spacing_transposed': array([1.37537074, 0.89843798, 0.89843798]), 'data.shape (data is transposed)': (1, 368, 512, 512)} 
+after:  {'spacing': array([2.71352554, 1.90353129, 1.90353129]), 'data.shape (data is resampled)': (1, 187, 242, 242)} 
+
+1 24
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage0/pn_011.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.31290555, 0.94604498, 0.94604498]), 'spacing_transposed': array([1.31290555, 0.94604498, 0.94604498]), 'data.shape (data is transposed)': (1, 405, 512, 512)} 
+after:  {'spacing': array([2.71352554, 1.90353129, 1.90353129]), 'data.shape (data is resampled)': (1, 196, 254, 254)} 
+
+1 8281
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage0/pn_012.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.32516229, 1.015625  , 1.015625  ]), 'spacing_transposed': array([1.32516229, 1.015625  , 1.015625  ]), 'data.shape (data is transposed)': (1, 435, 512, 512)} 
+after:  {'spacing': array([2.71352554, 1.90353129, 1.90353129]), 'data.shape (data is resampled)': (1, 212, 273, 273)} 
+
+1 21
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage0/pn_047.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.31165445, 0.87890601, 0.87890601]), 'spacing_transposed': array([1.31165445, 0.87890601, 0.87890601]), 'data.shape (data is transposed)': (1, 376, 512, 512)} 
+after:  {'spacing': array([2.71352554, 1.90353129, 1.90353129]), 'data.shape (data is resampled)': (1, 182, 236, 236)} 
+
+1 1369
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage0/pn_048.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.3221122 , 1.04614305, 1.04614305]), 'spacing_transposed': array([1.3221122 , 1.04614305, 1.04614305]), 'data.shape (data is transposed)': (1, 448, 512, 512)} 
+after:  {'spacing': array([2.71352554, 1.90353129, 1.90353129]), 'data.shape (data is resampled)': (1, 218, 281, 281)} 
+
+1 526
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage0/pn_049.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([2.74187255, 0.91552699, 0.91552699]), 'spacing_transposed': array([2.74187255, 0.91552699, 0.91552699]), 'data.shape (data is transposed)': (1, 189, 512, 512)} 
+after:  {'spacing': array([2.71352554, 1.90353129, 1.90353129]), 'data.shape (data is resampled)': (1, 191, 246, 246)} 
+
+1 405
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage0/pn_052.npz
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([2.7266624 , 0.87768602, 0.87768602]), 'spacing_transposed': array([2.7266624 , 0.87768602, 0.87768602]), 'data.shape (data is transposed)': (1, 181, 512, 512)} 
+after:  {'spacing': array([2.71352554, 1.90353129, 1.90353129]), 'data.shape (data is resampled)': (1, 182, 236, 236)} 
+
+1 1209
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage0/pn_093.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.39755428, 0.97656202, 0.97656202]), 'spacing_transposed': array([1.39755428, 0.97656202, 0.97656202]), 'data.shape (data is transposed)': (1, 390, 512, 512)} 
+after:  {'spacing': array([2.71352554, 1.90353129, 1.90353129]), 'data.shape (data is resampled)': (1, 201, 263, 263)} 
+
+1 158
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage0/pn_097.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.33275914, 0.94848597, 0.94848597]), 'spacing_transposed': array([1.33275914, 0.94848597, 0.94848597]), 'data.shape (data is transposed)': (1, 406, 512, 512)} 
+after:  {'spacing': array([2.71352554, 1.90353129, 1.90353129]), 'data.shape (data is resampled)': (1, 199, 255, 255)} 
+
+1 225
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage0/pn_098.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.31012595, 0.89843798, 0.89843798]), 'spacing_transposed': array([1.31012595, 0.89843798, 0.89843798]), 'data.shape (data is transposed)': (1, 385, 512, 512)} 
+after:  {'spacing': array([2.71352554, 1.90353129, 1.90353129]), 'data.shape (data is resampled)': (1, 186, 242, 242)} 
+
+1 3147
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage0/pn_099.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([2.5      , 0.9765625, 0.9765625]), 'spacing_transposed': array([2.5      , 0.9765625, 0.9765625]), 'data.shape (data is transposed)': (1, 193, 512, 512)} 
+after:  {'spacing': array([2.71352554, 1.90353129, 1.90353129]), 'data.shape (data is resampled)': (1, 178, 263, 263)} 
+
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage0/pn_134.npz
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([2.4000001 , 0.73199999, 0.73199999]), 'spacing_transposed': array([2.4000001 , 0.73199999, 0.73199999]), 'data.shape (data is transposed)': (1, 196, 512, 512)} 
+after:  {'spacing': array([2.71352554, 1.90353129, 1.90353129]), 'data.shape (data is resampled)': (1, 173, 197, 197)} 
+
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage0/pn_135.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([2.        , 0.68164062, 0.68164062]), 'spacing_transposed': array([2.        , 0.68164062, 0.68164062]), 'data.shape (data is transposed)': (1, 217, 512, 512)} 
+after:  {'spacing': array([2.71352554, 1.90353129, 1.90353129]), 'data.shape (data is resampled)': (1, 160, 183, 183)} 
+
+1 10
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage0/pn_136.npz
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([2.76992869, 0.75390601, 0.75390601]), 'spacing_transposed': array([2.76992869, 0.75390601, 0.75390601]), 'data.shape (data is transposed)': (1, 156, 512, 512)} 
+after:  {'spacing': array([2.71352554, 1.90353129, 1.90353129]), 'data.shape (data is resampled)': (1, 159, 203, 203)} 
+
+1 808
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage0/pn_137.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.19680858, 0.78125   , 0.78125   ]), 'spacing_transposed': array([1.19680858, 0.78125   , 0.78125   ]), 'data.shape (data is transposed)': (1, 377, 512, 512)} 
+after:  {'spacing': array([2.71352554, 1.90353129, 1.90353129]), 'data.shape (data is resampled)': (1, 166, 210, 210)} 
+
+1 9214
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage0/pn_001.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.34646189, 0.78515601, 0.78515601]), 'spacing_transposed': array([1.34646189, 0.78515601, 0.78515601]), 'data.shape (data is transposed)': (1, 333, 512, 512)} 
+after:  {'spacing': array([2.71352554, 1.90353129, 1.90353129]), 'data.shape (data is resampled)': (1, 165, 211, 211)} 
+
+1 4320
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage0/pn_002.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.30437541, 0.94848597, 0.94848597]), 'spacing_transposed': array([1.30437541, 0.94848597, 0.94848597]), 'data.shape (data is transposed)': (1, 406, 512, 512)} 
+after:  {'spacing': array([2.71352554, 1.90353129, 1.90353129]), 'data.shape (data is resampled)': (1, 195, 255, 255)} 
+
+1 2
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage0/pn_003.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.33229589, 0.85449201, 0.85449201]), 'spacing_transposed': array([1.33229589, 0.85449201, 0.85449201]), 'data.shape (data is transposed)': (1, 366, 512, 512)} 
+after:  {'spacing': array([2.71352554, 1.90353129, 1.90353129]), 'data.shape (data is resampled)': (1, 180, 230, 230)} 
+
+1 1141
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage0/pn_006.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([2.71732521, 0.94726598, 0.94726598]), 'spacing_transposed': array([2.71732521, 0.94726598, 0.94726598]), 'data.shape (data is transposed)': (1, 196, 512, 512)} 
+after:  {'spacing': array([2.71352554, 1.90353129, 1.90353129]), 'data.shape (data is resampled)': (1, 196, 255, 255)} 
+
+1 625
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage0/pn_068.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.32553744, 0.98754901, 0.98754901]), 'spacing_transposed': array([1.32553744, 0.98754901, 0.98754901]), 'data.shape (data is transposed)': (1, 423, 512, 512)} 
+after:  {'spacing': array([2.71352554, 1.90353129, 1.90353129]), 'data.shape (data is resampled)': (1, 207, 266, 266)} 
+
+1 56
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage0/pn_069.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.3672359 , 0.97656202, 0.97656202]), 'spacing_transposed': array([1.3672359 , 0.97656202, 0.97656202]), 'data.shape (data is transposed)': (1, 404, 512, 512)} 
+after:  {'spacing': array([2.71352554, 1.90353129, 1.90353129]), 'data.shape (data is resampled)': (1, 204, 263, 263)} 
+
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage0/pn_070.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.31681347, 0.75390601, 0.75390601]), 'spacing_transposed': array([1.31681347, 0.75390601, 0.75390601]), 'data.shape (data is transposed)': (1, 354, 512, 512)} 
+after:  {'spacing': array([2.71352554, 1.90353129, 1.90353129]), 'data.shape (data is resampled)': (1, 172, 203, 203)} 
+
+1 6810
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage0/pn_072.npz
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([5.47612715, 0.78125   , 0.78125   ]), 'spacing_transposed': array([5.47612715, 0.78125   , 0.78125   ]), 'data.shape (data is transposed)': (1, 82, 512, 512)} 
+after:  {'spacing': array([2.71352554, 1.90353129, 1.90353129]), 'data.shape (data is resampled)': (1, 165, 210, 210)} 
+
+1 158
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage0/pn_109.npz
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([2.5       , 0.76599997, 0.76599997]), 'spacing_transposed': array([2.5       , 0.76599997, 0.76599997]), 'data.shape (data is transposed)': (1, 176, 512, 512)} 
+after:  {'spacing': array([2.71352554, 1.90353129, 1.90353129]), 'data.shape (data is resampled)': (1, 162, 206, 206)} 
+
+1 496
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage0/pn_111.npz
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([2.5       , 0.60351562, 0.60351562]), 'spacing_transposed': array([2.5       , 0.60351562, 0.60351562]), 'data.shape (data is transposed)': (1, 100, 512, 512)} 
+after:  {'spacing': array([2.71352554, 1.90353129, 1.90353129]), 'data.shape (data is resampled)': (1, 92, 162, 162)} 
+
+1 7516
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage0/pn_112.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([2.        , 0.80859375, 0.80859375]), 'spacing_transposed': array([2.        , 0.80859375, 0.80859375]), 'data.shape (data is transposed)': (1, 330, 512, 512)} 
+after:  {'spacing': array([2.71352554, 1.90353129, 1.90353129]), 'data.shape (data is resampled)': (1, 243, 217, 217)} 
+
+1 116
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage0/pn_113.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.5       , 0.78100002, 0.78100002]), 'spacing_transposed': array([1.5       , 0.78100002, 0.78100002]), 'data.shape (data is transposed)': (1, 397, 512, 512)} 
+after:  {'spacing': array([2.71352554, 1.90353129, 1.90353129]), 'data.shape (data is resampled)': (1, 219, 210, 210)} 
+
+1 170
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage0/pn_122.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([2.        , 0.69921875, 0.69921875]), 'spacing_transposed': array([2.        , 0.69921875, 0.69921875]), 'data.shape (data is transposed)': (1, 200, 512, 512)} 
+after:  {'spacing': array([2.71352554, 1.90353129, 1.90353129]), 'data.shape (data is resampled)': (1, 147, 188, 188)} 
+
+1 215
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage0/pn_123.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.25    , 0.765625, 0.765625]), 'spacing_transposed': array([1.25    , 0.765625, 0.765625]), 'data.shape (data is transposed)': (1, 323, 512, 512)} 
+after:  {'spacing': array([2.71352554, 1.90353129, 1.90353129]), 'data.shape (data is resampled)': (1, 149, 206, 206)} 
+
+1 90
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage0/pn_124.npz
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([2.5       , 0.81054688, 0.81054688]), 'spacing_transposed': array([2.5       , 0.81054688, 0.81054688]), 'data.shape (data is transposed)': (1, 110, 512, 512)} 
+after:  {'spacing': array([2.71352554, 1.90353129, 1.90353129]), 'data.shape (data is resampled)': (1, 101, 218, 218)} 
+
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage0/pn_125.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.19680858, 0.78125   , 0.78125   ]), 'spacing_transposed': array([1.19680858, 0.78125   , 0.78125   ]), 'data.shape (data is transposed)': (1, 377, 512, 512)} 
+after:  {'spacing': array([1.20000005, 0.84179699, 0.84179699]), 'data.shape (data is resampled)': (1, 376, 475, 475)} 
+
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage1/pn_001.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.34646189, 0.78515601, 0.78515601]), 'spacing_transposed': array([1.34646189, 0.78515601, 0.78515601]), 'data.shape (data is transposed)': (1, 333, 512, 512)} 
+after:  {'spacing': array([1.20000005, 0.84179699, 0.84179699]), 'data.shape (data is resampled)': (1, 374, 478, 478)} 
+
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage1/pn_002.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.30437541, 0.94848597, 0.94848597]), 'spacing_transposed': array([1.30437541, 0.94848597, 0.94848597]), 'data.shape (data is transposed)': (1, 406, 512, 512)} 
+after:  {'spacing': array([1.20000005, 0.84179699, 0.84179699]), 'data.shape (data is resampled)': (1, 441, 577, 577)} 
+
+1 23
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage1/pn_003.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.33229589, 0.85449201, 0.85449201]), 'spacing_transposed': array([1.33229589, 0.85449201, 0.85449201]), 'data.shape (data is transposed)': (1, 366, 512, 512)} 
+after:  {'spacing': array([1.20000005, 0.84179699, 0.84179699]), 'data.shape (data is resampled)': (1, 406, 520, 520)} 
+
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage1/pn_006.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.32839775, 1.015625  , 1.015625  ]), 'spacing_transposed': array([1.32839775, 1.015625  , 1.015625  ]), 'data.shape (data is transposed)': (1, 435, 512, 512)} 
+after:  {'spacing': array([1.20000005, 0.84179699, 0.84179699]), 'data.shape (data is resampled)': (1, 482, 618, 618)} 
+
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage1/pn_042.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.30726922, 0.906982  , 0.906982  ]), 'spacing_transposed': array([1.30726922, 0.906982  , 0.906982  ]), 'data.shape (data is transposed)': (1, 388, 512, 512)} 
+after:  {'spacing': array([1.20000005, 0.84179699, 0.84179699]), 'data.shape (data is resampled)': (1, 423, 552, 552)} 
+
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage1/pn_044.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.31658089, 0.83203101, 0.83203101]), 'spacing_transposed': array([1.31658089, 0.83203101, 0.83203101]), 'data.shape (data is transposed)': (1, 392, 512, 512)} 
+after:  {'spacing': array([1.20000005, 0.84179699, 0.84179699]), 'data.shape (data is resampled)': (1, 430, 506, 506)} 
+
+1 17277
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage1/pn_045.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([2.68825269, 0.97656298, 0.97656298]), 'spacing_transposed': array([2.68825269, 0.97656298, 0.97656298]), 'data.shape (data is transposed)': (1, 254, 512, 512)} 
+after:  {'spacing': array([1.20000005, 0.84179699, 0.84179699]), 'data.shape (data is resampled)': (1, 569, 594, 594)} 
+
+1 11045
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage1/pn_046.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.1970371 , 0.84765601, 0.84765601]), 'spacing_transposed': array([1.1970371 , 0.84765601, 0.84765601]), 'data.shape (data is transposed)': (1, 406, 512, 512)} 
+after:  {'spacing': array([1.20000005, 0.84179699, 0.84179699]), 'data.shape (data is resampled)': (1, 405, 516, 516)} 
+
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage1/pn_084.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.30839634, 0.94604498, 0.94604498]), 'spacing_transposed': array([1.30839634, 0.94604498, 0.94604498]), 'data.shape (data is transposed)': (1, 405, 512, 512)} 
+after:  {'spacing': array([1.20000005, 0.84179699, 0.84179699]), 'data.shape (data is resampled)': (1, 442, 575, 575)} 
+
+1 118
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage1/pn_085.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.30359542, 0.97656202, 0.97656202]), 'spacing_transposed': array([1.30359542, 0.97656202, 0.97656202]), 'data.shape (data is transposed)': (1, 418, 512, 512)} 
+after:  {'spacing': array([1.20000005, 0.84179699, 0.84179699]), 'data.shape (data is resampled)': (1, 454, 594, 594)} 
+
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage1/pn_086.npz
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([2.74424505, 0.83129901, 0.83129901]), 'spacing_transposed': array([2.74424505, 0.83129901, 0.83129901]), 'data.shape (data is transposed)': (1, 172, 512, 512)} 
+after:  {'spacing': array([1.20000005, 0.84179699, 0.84179699]), 'data.shape (data is resampled)': (1, 393, 506, 506)} 
+
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage1/pn_087.npz
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([3.        , 0.77929688, 0.77929688]), 'spacing_transposed': array([3.        , 0.77929688, 0.77929688]), 'data.shape (data is transposed)': (1, 159, 512, 512)} 
+after:  {'spacing': array([1.20000005, 0.84179699, 0.84179699]), 'data.shape (data is resampled)': (1, 397, 474, 474)} 
+
+1 7643
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage1/pn_126.npz
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([2.5       , 0.60351562, 0.60351562]), 'spacing_transposed': array([2.5       , 0.60351562, 0.60351562]), 'data.shape (data is transposed)': (1, 100, 512, 512)} 
+after:  {'spacing': array([1.20000005, 0.84179699, 0.84179699]), 'data.shape (data is resampled)': (1, 208, 367, 367)} 
+
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage1/pn_127.npz
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([2.68589091, 0.84960902, 0.84960902]), 'spacing_transposed': array([2.68589091, 0.84960902, 0.84960902]), 'data.shape (data is transposed)': (1, 176, 512, 512)} 
+after:  {'spacing': array([1.20000005, 0.84179699, 0.84179699]), 'data.shape (data is resampled)': (1, 394, 517, 517)} 
+
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage1/pn_128.npz
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([2.5       , 0.83203125, 0.83203125]), 'spacing_transposed': array([2.5       , 0.83203125, 0.83203125]), 'data.shape (data is transposed)': (1, 159, 512, 512)} 
+after:  {'spacing': array([1.20000005, 0.84179699, 0.84179699]), 'data.shape (data is resampled)': (1, 331, 506, 506)} 
+
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage1/pn_129.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.31020641, 0.8125    , 0.8125    ]), 'spacing_transposed': array([1.31020641, 0.8125    , 0.8125    ]), 'data.shape (data is transposed)': (1, 396, 512, 512)} 
+after:  {'spacing': array([1.20000005, 0.84179699, 0.84179699]), 'data.shape (data is resampled)': (1, 432, 494, 494)} 
+
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage1/pn_037.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.31305361, 1.03393602, 1.03393602]), 'spacing_transposed': array([1.31305361, 1.03393602, 1.03393602]), 'data.shape (data is transposed)': (1, 443, 512, 512)} 
+after:  {'spacing': array([1.20000005, 0.84179699, 0.84179699]), 'data.shape (data is resampled)': (1, 485, 629, 629)} 
+
+1 2947
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage1/pn_038.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.31141818, 0.92895502, 0.92895502]), 'spacing_transposed': array([1.31141818, 0.92895502, 0.92895502]), 'data.shape (data is transposed)': (1, 398, 512, 512)} 
+after:  {'spacing': array([1.20000005, 0.84179699, 0.84179699]), 'data.shape (data is resampled)': (1, 435, 565, 565)} 
+
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage1/pn_040.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.35877478, 0.97656202, 0.97656202]), 'spacing_transposed': array([1.35877478, 0.97656202, 0.97656202]), 'data.shape (data is transposed)': (1, 408, 512, 512)} 
+after:  {'spacing': array([1.20000005, 0.84179699, 0.84179699]), 'data.shape (data is resampled)': (1, 462, 594, 594)} 
+
+1 241
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage1/pn_041.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([2.71732521, 0.94726598, 0.94726598]), 'spacing_transposed': array([2.71732521, 0.94726598, 0.94726598]), 'data.shape (data is transposed)': (1, 196, 512, 512)} 
+after:  {'spacing': array([1.20000005, 0.84179699, 0.84179699]), 'data.shape (data is resampled)': (1, 444, 576, 576)} 
+
+1 6958
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage1/pn_068.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.32553744, 0.98754901, 0.98754901]), 'spacing_transposed': array([1.32553744, 0.98754901, 0.98754901]), 'data.shape (data is transposed)': (1, 423, 512, 512)} 
+after:  {'spacing': array([1.20000005, 0.84179699, 0.84179699]), 'data.shape (data is resampled)': (1, 467, 601, 601)} 
+
+1 591
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage1/pn_069.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.3672359 , 0.97656202, 0.97656202]), 'spacing_transposed': array([1.3672359 , 0.97656202, 0.97656202]), 'data.shape (data is transposed)': (1, 404, 512, 512)} 
+after:  {'spacing': array([1.20000005, 0.84179699, 0.84179699]), 'data.shape (data is resampled)': (1, 460, 594, 594)} 
+
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage1/pn_070.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.31681347, 0.75390601, 0.75390601]), 'spacing_transposed': array([1.31681347, 0.75390601, 0.75390601]), 'data.shape (data is transposed)': (1, 354, 512, 512)} 
+after:  {'spacing': array([1.20000005, 0.84179699, 0.84179699]), 'data.shape (data is resampled)': (1, 388, 459, 459)} 
+
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage1/pn_072.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([2.4000001 , 0.80500001, 0.80500001]), 'spacing_transposed': array([2.4000001 , 0.80500001, 0.80500001]), 'data.shape (data is transposed)': (1, 251, 512, 512)} 
+after:  {'spacing': array([1.20000005, 0.84179699, 0.84179699]), 'data.shape (data is resampled)': (1, 502, 490, 490)} 
+
+1 12536
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage1/pn_118.npz
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([3.        , 0.73632812, 0.73632812]), 'spacing_transposed': array([3.        , 0.73632812, 0.73632812]), 'data.shape (data is transposed)': (1, 164, 512, 512)} 
+after:  {'spacing': array([1.20000005, 0.84179699, 0.84179699]), 'data.shape (data is resampled)': (1, 410, 448, 448)} 
+
+1 811
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage1/pn_119.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.25      , 0.70703125, 0.70703125]), 'spacing_transposed': array([1.25      , 0.70703125, 0.70703125]), 'data.shape (data is transposed)': (1, 355, 512, 512)} 
+after:  {'spacing': array([1.20000005, 0.84179699, 0.84179699]), 'data.shape (data is resampled)': (1, 370, 430, 430)} 
+
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage1/pn_120.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([2.82965922, 0.97070301, 0.97070301]), 'spacing_transposed': array([2.82965922, 0.97070301, 0.97070301]), 'data.shape (data is transposed)': (1, 195, 512, 512)} 
+after:  {'spacing': array([1.20000005, 0.84179699, 0.84179699]), 'data.shape (data is resampled)': (1, 460, 590, 590)} 
+
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage1/pn_121.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.38323545, 0.87890601, 0.87890601]), 'spacing_transposed': array([1.38323545, 0.87890601, 0.87890601]), 'data.shape (data is transposed)': (1, 357, 512, 512)} 
+after:  {'spacing': array([1.20000005, 0.84179699, 0.84179699]), 'data.shape (data is resampled)': (1, 412, 535, 535)} 
+
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage1/pn_023.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.33871126, 0.859375  , 0.859375  ]), 'spacing_transposed': array([1.33871126, 0.859375  , 0.859375  ]), 'data.shape (data is transposed)': (1, 368, 512, 512)} 
+after:  {'spacing': array([1.20000005, 0.84179699, 0.84179699]), 'data.shape (data is resampled)': (1, 411, 523, 523)} 
+
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage1/pn_024.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([2.69192219, 1.08276403, 1.08276403]), 'spacing_transposed': array([2.69192219, 1.08276403, 1.08276403]), 'data.shape (data is transposed)': (1, 223, 512, 512)} 
+after:  {'spacing': array([1.20000005, 0.84179699, 0.84179699]), 'data.shape (data is resampled)': (1, 500, 659, 659)} 
+
+1 1485
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage1/pn_026.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.28830099, 0.92407203, 0.92407203]), 'spacing_transposed': array([1.28830099, 0.92407203, 0.92407203]), 'data.shape (data is transposed)': (1, 396, 512, 512)} 
+after:  {'spacing': array([1.20000005, 0.84179699, 0.84179699]), 'data.shape (data is resampled)': (1, 425, 562, 562)} 
+
+1 1616
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage1/pn_027.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.33749998, 0.83862299, 0.83862299]), 'spacing_transposed': array([1.33749998, 0.83862299, 0.83862299]), 'data.shape (data is transposed)': (1, 359, 512, 512)} 
+after:  {'spacing': array([1.20000005, 0.84179699, 0.84179699]), 'data.shape (data is resampled)': (1, 400, 510, 510)} 
+
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage1/pn_053.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.32014322, 1.04492199, 1.04492199]), 'spacing_transposed': array([1.32014322, 1.04492199, 1.04492199]), 'data.shape (data is transposed)': (1, 447, 512, 512)} 
+after:  {'spacing': array([1.20000005, 0.84179699, 0.84179699]), 'data.shape (data is resampled)': (1, 492, 636, 636)} 
+
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage1/pn_056.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.31013811, 1.01684594, 1.01684594]), 'spacing_transposed': array([1.31013811, 1.01684594, 1.01684594]), 'data.shape (data is transposed)': (1, 435, 512, 512)} 
+after:  {'spacing': array([1.20000005, 0.84179699, 0.84179699]), 'data.shape (data is resampled)': (1, 475, 618, 618)} 
+
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage1/pn_057.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.32040524, 0.97460902, 0.97460902]), 'spacing_transposed': array([1.32040524, 0.97460902, 0.97460902]), 'data.shape (data is transposed)': (1, 451, 512, 512)} 
+after:  {'spacing': array([1.20000005, 0.84179699, 0.84179699]), 'data.shape (data is resampled)': (1, 496, 593, 593)} 
+
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage1/pn_058.npz
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([5.47612715, 0.78125   , 0.78125   ]), 'spacing_transposed': array([5.47612715, 0.78125   , 0.78125   ]), 'data.shape (data is transposed)': (1, 82, 512, 512)} 
+after:  {'spacing': array([1.20000005, 0.84179699, 0.84179699]), 'data.shape (data is resampled)': (1, 374, 475, 475)} 
+
+1 1813
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage1/pn_109.npz
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([2.5       , 0.76599997, 0.76599997]), 'spacing_transposed': array([2.5       , 0.76599997, 0.76599997]), 'data.shape (data is transposed)': (1, 176, 512, 512)} 
+after:  {'spacing': array([1.20000005, 0.84179699, 0.84179699]), 'data.shape (data is resampled)': (1, 367, 466, 466)} 
+
+1 6271
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage1/pn_111.npz
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([2.5       , 0.60351562, 0.60351562]), 'spacing_transposed': array([2.5       , 0.60351562, 0.60351562]), 'data.shape (data is transposed)': (1, 100, 512, 512)} 
+after:  {'spacing': array([1.20000005, 0.84179699, 0.84179699]), 'data.shape (data is resampled)': (1, 208, 367, 367)} 
+
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage1/pn_112.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([2.        , 0.80859375, 0.80859375]), 'spacing_transposed': array([2.        , 0.80859375, 0.80859375]), 'data.shape (data is transposed)': (1, 330, 512, 512)} 
+after:  {'spacing': array([1.20000005, 0.84179699, 0.84179699]), 'data.shape (data is resampled)': (1, 550, 492, 492)} 
+
+1 1304
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage1/pn_113.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.5       , 0.78100002, 0.78100002]), 'spacing_transposed': array([1.5       , 0.78100002, 0.78100002]), 'data.shape (data is transposed)': (1, 397, 512, 512)} 
+after:  {'spacing': array([1.20000005, 0.84179699, 0.84179699]), 'data.shape (data is resampled)': (1, 496, 475, 475)} 
+
+1 2326
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage1/pn_122.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([2.        , 0.69921875, 0.69921875]), 'spacing_transposed': array([2.        , 0.69921875, 0.69921875]), 'data.shape (data is transposed)': (1, 200, 512, 512)} 
+after:  {'spacing': array([1.20000005, 0.84179699, 0.84179699]), 'data.shape (data is resampled)': (1, 333, 425, 425)} 
+
+1 2286
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage1/pn_123.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.25    , 0.765625, 0.765625]), 'spacing_transposed': array([1.25    , 0.765625, 0.765625]), 'data.shape (data is transposed)': (1, 323, 512, 512)} 
+after:  {'spacing': array([1.20000005, 0.84179699, 0.84179699]), 'data.shape (data is resampled)': (1, 336, 466, 466)} 
+
+1 1127
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage1/pn_124.npz
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([2.5       , 0.81054688, 0.81054688]), 'spacing_transposed': array([2.5       , 0.81054688, 0.81054688]), 'data.shape (data is transposed)': (1, 110, 512, 512)} 
+after:  {'spacing': array([1.20000005, 0.84179699, 0.84179699]), 'data.shape (data is resampled)': (1, 229, 493, 493)} 
+
+1 17725
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage1/pn_125.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.30227184, 0.83252001, 0.83252001]), 'spacing_transposed': array([1.30227184, 0.83252001, 0.83252001]), 'data.shape (data is transposed)': (1, 357, 512, 512)} 
+after:  {'spacing': array([1.20000005, 0.84179699, 0.84179699]), 'data.shape (data is resampled)': (1, 387, 506, 506)} 
+
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage1/pn_019.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.3335135, 0.992432 , 0.992432 ]), 'spacing_transposed': array([1.3335135, 0.992432 , 0.992432 ]), 'data.shape (data is transposed)': (1, 425, 512, 512)} 
+after:  {'spacing': array([1.20000005, 0.84179699, 0.84179699]), 'data.shape (data is resampled)': (1, 472, 604, 604)} 
+
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage1/pn_020.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.3665055 , 0.94921899, 0.94921899]), 'spacing_transposed': array([1.3665055 , 0.94921899, 0.94921899]), 'data.shape (data is transposed)': (1, 393, 512, 512)} 
+after:  {'spacing': array([1.20000005, 0.84179699, 0.84179699]), 'data.shape (data is resampled)': (1, 448, 577, 577)} 
+
+1 4199
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage1/pn_021.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.19717658, 0.82031202, 0.82031202]), 'spacing_transposed': array([1.19717658, 0.82031202, 0.82031202]), 'data.shape (data is transposed)': (1, 426, 512, 512)} 
+after:  {'spacing': array([1.20000005, 0.84179699, 0.84179699]), 'data.shape (data is resampled)': (1, 425, 499, 499)} 
+
+1 5501
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage1/pn_022.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.31524646, 1.05590796, 1.05590796]), 'spacing_transposed': array([1.31524646, 1.05590796, 1.05590796]), 'data.shape (data is transposed)': (1, 452, 512, 512)} 
+after:  {'spacing': array([1.20000005, 0.84179699, 0.84179699]), 'data.shape (data is resampled)': (1, 495, 642, 642)} 
+
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage1/pn_063.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.25    , 0.703125, 0.703125]), 'spacing_transposed': array([1.25    , 0.703125, 0.703125]), 'data.shape (data is transposed)': (1, 374, 512, 512)} 
+after:  {'spacing': array([1.20000005, 0.84179699, 0.84179699]), 'data.shape (data is resampled)': (1, 390, 428, 428)} 
+
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage1/pn_064.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.36249602, 0.85351598, 0.85351598]), 'spacing_transposed': array([1.36249602, 0.85351598, 0.85351598]), 'data.shape (data is transposed)': (1, 355, 512, 512)} 
+after:  {'spacing': array([1.20000005, 0.84179699, 0.84179699]), 'data.shape (data is resampled)': (1, 403, 519, 519)} 
+
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage1/pn_065.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.33600628, 0.79345697, 0.79345697]), 'spacing_transposed': array([1.33600628, 0.79345697, 0.79345697]), 'data.shape (data is transposed)': (1, 340, 512, 512)} 
+after:  {'spacing': array([1.20000005, 0.84179699, 0.84179699]), 'data.shape (data is resampled)': (1, 379, 483, 483)} 
+
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage1/pn_066.npz
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([2.7266624 , 0.87768602, 0.87768602]), 'spacing_transposed': array([2.7266624 , 0.87768602, 0.87768602]), 'data.shape (data is transposed)': (1, 181, 512, 512)} 
+after:  {'spacing': array([1.20000005, 0.84179699, 0.84179699]), 'data.shape (data is resampled)': (1, 411, 534, 534)} 
+
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage1/pn_093.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.39755428, 0.97656202, 0.97656202]), 'spacing_transposed': array([1.39755428, 0.97656202, 0.97656202]), 'data.shape (data is transposed)': (1, 390, 512, 512)} 
+after:  {'spacing': array([1.20000005, 0.84179699, 0.84179699]), 'data.shape (data is resampled)': (1, 454, 594, 594)} 
+
+1 1878
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage1/pn_097.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.33275914, 0.94848597, 0.94848597]), 'spacing_transposed': array([1.33275914, 0.94848597, 0.94848597]), 'data.shape (data is transposed)': (1, 406, 512, 512)} 
+after:  {'spacing': array([1.20000005, 0.84179699, 0.84179699]), 'data.shape (data is resampled)': (1, 451, 577, 577)} 
+
+1 2593
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage1/pn_098.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.31012595, 0.89843798, 0.89843798]), 'spacing_transposed': array([1.31012595, 0.89843798, 0.89843798]), 'data.shape (data is transposed)': (1, 385, 512, 512)} 
+after:  {'spacing': array([1.20000005, 0.84179699, 0.84179699]), 'data.shape (data is resampled)': (1, 420, 546, 546)} 
+
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage1/pn_099.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([2.77460408, 0.98632801, 0.98632801]), 'spacing_transposed': array([2.77460408, 0.98632801, 0.98632801]), 'data.shape (data is transposed)': (1, 204, 512, 512)} 
+after:  {'spacing': array([1.20000005, 0.84179699, 0.84179699]), 'data.shape (data is resampled)': (1, 472, 600, 600)} 
+
+1 117
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage1/pn_007.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.30351853, 0.92529303, 0.92529303]), 'spacing_transposed': array([1.30351853, 0.92529303, 0.92529303]), 'data.shape (data is transposed)': (1, 396, 512, 512)} 
+after:  {'spacing': array([1.20000005, 0.84179699, 0.84179699]), 'data.shape (data is resampled)': (1, 430, 563, 563)} 
+
+1 4023
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage1/pn_010.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.37537074, 0.89843798, 0.89843798]), 'spacing_transposed': array([1.37537074, 0.89843798, 0.89843798]), 'data.shape (data is transposed)': (1, 368, 512, 512)} 
+after:  {'spacing': array([1.20000005, 0.84179699, 0.84179699]), 'data.shape (data is resampled)': (1, 422, 546, 546)} 
+
+1 272
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage1/pn_011.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.31290555, 0.94604498, 0.94604498]), 'spacing_transposed': array([1.31290555, 0.94604498, 0.94604498]), 'data.shape (data is transposed)': (1, 405, 512, 512)} 
+after:  {'spacing': array([1.20000005, 0.84179699, 0.84179699]), 'data.shape (data is resampled)': (1, 443, 575, 575)} 
+
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage1/pn_012.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.31679523, 0.859375  , 0.859375  ]), 'spacing_transposed': array([1.31679523, 0.859375  , 0.859375  ]), 'data.shape (data is transposed)': (1, 403, 512, 512)} 
+after:  {'spacing': array([1.20000005, 0.84179699, 0.84179699]), 'data.shape (data is resampled)': (1, 442, 523, 523)} 
+
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage1/pn_059.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.33488083, 0.9375    , 0.9375    ]), 'spacing_transposed': array([1.33488083, 0.9375    , 0.9375    ]), 'data.shape (data is transposed)': (1, 408, 512, 512)} 
+after:  {'spacing': array([1.20000005, 0.84179699, 0.84179699]), 'data.shape (data is resampled)': (1, 454, 570, 570)} 
+
+1 886
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage1/pn_060.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.30296433, 0.938721  , 0.938721  ]), 'spacing_transposed': array([1.30296433, 0.938721  , 0.938721  ]), 'data.shape (data is transposed)': (1, 402, 512, 512)} 
+after:  {'spacing': array([1.20000005, 0.84179699, 0.84179699]), 'data.shape (data is resampled)': (1, 436, 571, 571)} 
+
+1 978
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage1/pn_061.npz
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([2.77814651, 0.90625   , 0.90625   ]), 'spacing_transposed': array([2.77814651, 0.90625   , 0.90625   ]), 'data.shape (data is transposed)': (1, 189, 512, 512)} 
+after:  {'spacing': array([1.20000005, 0.84179699, 0.84179699]), 'data.shape (data is resampled)': (1, 438, 551, 551)} 
+
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage1/pn_062.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.33347833, 0.96435499, 0.96435499]), 'spacing_transposed': array([1.33347833, 0.96435499, 0.96435499]), 'data.shape (data is transposed)': (1, 413, 512, 512)} 
+after:  {'spacing': array([1.20000005, 0.84179699, 0.84179699]), 'data.shape (data is resampled)': (1, 459, 587, 587)} 
+
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage1/pn_088.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.3316102, 0.906982 , 0.906982 ]), 'spacing_transposed': array([1.3316102, 0.906982 , 0.906982 ]), 'data.shape (data is transposed)': (1, 388, 512, 512)} 
+after:  {'spacing': array([1.20000005, 0.84179699, 0.84179699]), 'data.shape (data is resampled)': (1, 431, 552, 552)} 
+
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage1/pn_089.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.31481576, 0.89843798, 0.89843798]), 'spacing_transposed': array([1.31481576, 0.89843798, 0.89843798]), 'data.shape (data is transposed)': (1, 385, 512, 512)} 
+after:  {'spacing': array([1.20000005, 0.84179699, 0.84179699]), 'data.shape (data is resampled)': (1, 422, 546, 546)} 
+
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage1/pn_090.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.33138001, 0.88867199, 0.88867199]), 'spacing_transposed': array([1.33138001, 0.88867199, 0.88867199]), 'data.shape (data is transposed)': (1, 381, 512, 512)} 
+after:  {'spacing': array([1.20000005, 0.84179699, 0.84179699]), 'data.shape (data is resampled)': (1, 423, 541, 541)} 
+
+1 532
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage1/pn_091.npz
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([4.79017687, 0.94921899, 0.94921899]), 'spacing_transposed': array([4.79017687, 0.94921899, 0.94921899]), 'data.shape (data is transposed)': (1, 109, 512, 512)} 
+after:  {'spacing': array([1.20000005, 0.84179699, 0.84179699]), 'data.shape (data is resampled)': (1, 435, 577, 577)} 
+
+1 8584
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage1/pn_138.npz
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([3.26185775, 0.89218801, 0.89218801]), 'spacing_transposed': array([3.26185775, 0.89218801, 0.89218801]), 'data.shape (data is transposed)': (1, 154, 512, 512)} 
+after:  {'spacing': array([1.20000005, 0.84179699, 0.84179699]), 'data.shape (data is resampled)': (1, 419, 543, 543)} 
+
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage1/pn_139.npz
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([2.73475361, 0.828125  , 0.828125  ]), 'spacing_transposed': array([2.73475361, 0.828125  , 0.828125  ]), 'data.shape (data is transposed)': (1, 171, 512, 512)} 
+after:  {'spacing': array([1.20000005, 0.84179699, 0.84179699]), 'data.shape (data is resampled)': (1, 390, 504, 504)} 
+
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage1/pn_140.npz
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([4.        , 0.71484375, 0.71484375]), 'spacing_transposed': array([4.        , 0.71484375, 0.71484375]), 'data.shape (data is transposed)': (1, 107, 512, 512)} 
+after:  {'spacing': array([1.20000005, 0.84179699, 0.84179699]), 'data.shape (data is resampled)': (1, 357, 435, 435)} 
+
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage1/pn_142.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.31107128, 0.94970697, 0.94970697]), 'spacing_transposed': array([1.31107128, 0.94970697, 0.94970697]), 'data.shape (data is transposed)': (1, 407, 512, 512)} 
+after:  {'spacing': array([1.20000005, 0.84179699, 0.84179699]), 'data.shape (data is resampled)': (1, 445, 578, 578)} 
+
+1 7737
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage1/pn_033.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.38339221, 0.93164098, 0.93164098]), 'spacing_transposed': array([1.38339221, 0.93164098, 0.93164098]), 'data.shape (data is transposed)': (1, 378, 512, 512)} 
+after:  {'spacing': array([1.20000005, 0.84179699, 0.84179699]), 'data.shape (data is resampled)': (1, 436, 567, 567)} 
+
+1 6040
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage1/pn_034.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([2.74177647, 0.98754901, 0.98754901]), 'spacing_transposed': array([2.74177647, 0.98754901, 0.98754901]), 'data.shape (data is transposed)': (1, 204, 512, 512)} 
+after:  {'spacing': array([1.20000005, 0.84179699, 0.84179699]), 'data.shape (data is resampled)': (1, 466, 601, 601)} 
+
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage1/pn_035.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([2.68548846, 0.97778302, 0.97778302]), 'spacing_transposed': array([2.68548846, 0.97778302, 0.97778302]), 'data.shape (data is transposed)': (1, 202, 512, 512)} 
+after:  {'spacing': array([1.20000005, 0.84179699, 0.84179699]), 'data.shape (data is resampled)': (1, 452, 595, 595)} 
+
+1 19256
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage1/pn_036.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.30699027, 0.99731398, 0.99731398]), 'spacing_transposed': array([1.30699027, 0.99731398, 0.99731398]), 'data.shape (data is transposed)': (1, 427, 512, 512)} 
+after:  {'spacing': array([1.20000005, 0.84179699, 0.84179699]), 'data.shape (data is resampled)': (1, 465, 607, 607)} 
+
+1 61921
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage1/pn_074.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.35703695, 0.79296899, 0.79296899]), 'spacing_transposed': array([1.35703695, 0.79296899, 0.79296899]), 'data.shape (data is transposed)': (1, 332, 512, 512)} 
+after:  {'spacing': array([1.20000005, 0.84179699, 0.84179699]), 'data.shape (data is resampled)': (1, 375, 482, 482)} 
+
+1 791
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage1/pn_075.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.19684219, 0.76953101, 0.76953101]), 'spacing_transposed': array([1.19684219, 0.76953101, 0.76953101]), 'data.shape (data is transposed)': (1, 381, 512, 512)} 
+after:  {'spacing': array([1.20000005, 0.84179699, 0.84179699]), 'data.shape (data is resampled)': (1, 380, 468, 468)} 
+
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage1/pn_077.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.39326143, 0.9375    , 0.9375    ]), 'spacing_transposed': array([1.39326143, 0.9375    , 0.9375    ]), 'data.shape (data is transposed)': (1, 376, 512, 512)} 
+after:  {'spacing': array([1.20000005, 0.84179699, 0.84179699]), 'data.shape (data is resampled)': (1, 437, 570, 570)} 
+
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage1/pn_078.npz
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([2.69870663, 0.85156202, 0.85156202]), 'spacing_transposed': array([2.69870663, 0.85156202, 0.85156202]), 'data.shape (data is transposed)': (1, 176, 512, 512)} 
+after:  {'spacing': array([1.20000005, 0.84179699, 0.84179699]), 'data.shape (data is resampled)': (1, 396, 518, 518)} 
+
+1 5510
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage1/pn_114.npz
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([2.        , 0.62890625, 0.62890625]), 'spacing_transposed': array([2.        , 0.62890625, 0.62890625]), 'data.shape (data is transposed)': (1, 327, 512, 512)} 
+after:  {'spacing': array([1.20000005, 0.84179699, 0.84179699]), 'data.shape (data is resampled)': (1, 545, 383, 383)} 
+
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage1/pn_115.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([2.65253496, 1.30981398, 1.30981398]), 'spacing_transposed': array([2.65253496, 1.30981398, 1.30981398]), 'data.shape (data is transposed)': (1, 270, 512, 512)} 
+after:  {'spacing': array([1.20000005, 0.84179699, 0.84179699]), 'data.shape (data is resampled)': (1, 597, 797, 797)} 
+
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage1/pn_116.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([2.4000001 , 0.87699997, 0.87699997]), 'spacing_transposed': array([2.4000001 , 0.87699997, 0.87699997]), 'data.shape (data is transposed)': (1, 196, 512, 512)} 
+after:  {'spacing': array([1.20000005, 0.84179699, 0.84179699]), 'data.shape (data is resampled)': (1, 392, 533, 533)} 
+
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage1/pn_117.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.31537688, 0.92529303, 0.92529303]), 'spacing_transposed': array([1.31537688, 0.92529303, 0.92529303]), 'data.shape (data is transposed)': (1, 396, 512, 512)} 
+after:  {'spacing': array([1.20000005, 0.84179699, 0.84179699]), 'data.shape (data is resampled)': (1, 434, 563, 563)} 
+
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage1/pn_028.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.31713152, 0.93139601, 0.93139601]), 'spacing_transposed': array([1.31713152, 0.93139601, 0.93139601]), 'data.shape (data is transposed)': (1, 399, 512, 512)} 
+after:  {'spacing': array([1.20000005, 0.84179699, 0.84179699]), 'data.shape (data is resampled)': (1, 438, 566, 566)} 
+
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage1/pn_029.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.30095553, 0.87890601, 0.87890601]), 'spacing_transposed': array([1.30095553, 0.87890601, 0.87890601]), 'data.shape (data is transposed)': (1, 376, 512, 512)} 
+after:  {'spacing': array([1.20000005, 0.84179699, 0.84179699]), 'data.shape (data is resampled)': (1, 408, 535, 535)} 
+
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage1/pn_030.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.3056612 , 0.86914098, 0.86914098]), 'spacing_transposed': array([1.3056612 , 0.86914098, 0.86914098]), 'data.shape (data is transposed)': (1, 434, 512, 512)} 
+after:  {'spacing': array([1.20000005, 0.84179699, 0.84179699]), 'data.shape (data is resampled)': (1, 472, 529, 529)} 
+
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage1/pn_032.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.32516229, 1.015625  , 1.015625  ]), 'spacing_transposed': array([1.32516229, 1.015625  , 1.015625  ]), 'data.shape (data is transposed)': (1, 435, 512, 512)} 
+after:  {'spacing': array([1.20000005, 0.84179699, 0.84179699]), 'data.shape (data is resampled)': (1, 480, 618, 618)} 
+
+1 216
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage1/pn_047.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.31165445, 0.87890601, 0.87890601]), 'spacing_transposed': array([1.31165445, 0.87890601, 0.87890601]), 'data.shape (data is transposed)': (1, 376, 512, 512)} 
+after:  {'spacing': array([1.20000005, 0.84179699, 0.84179699]), 'data.shape (data is resampled)': (1, 411, 535, 535)} 
+
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage1/pn_048.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.3221122 , 1.04614305, 1.04614305]), 'spacing_transposed': array([1.3221122 , 1.04614305, 1.04614305]), 'data.shape (data is transposed)': (1, 448, 512, 512)} 
+after:  {'spacing': array([1.20000005, 0.84179699, 0.84179699]), 'data.shape (data is resampled)': (1, 494, 636, 636)} 
+
+1 6190
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage1/pn_049.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([2.74187255, 0.91552699, 0.91552699]), 'spacing_transposed': array([2.74187255, 0.91552699, 0.91552699]), 'data.shape (data is transposed)': (1, 189, 512, 512)} 
+after:  {'spacing': array([1.20000005, 0.84179699, 0.84179699]), 'data.shape (data is resampled)': (1, 432, 557, 557)} 
+
+1 4723
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage1/pn_052.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.32323408, 0.80859399, 0.80859399]), 'spacing_transposed': array([1.32323408, 0.80859399, 0.80859399]), 'data.shape (data is transposed)': (1, 369, 512, 512)} 
+after:  {'spacing': array([1.20000005, 0.84179699, 0.84179699]), 'data.shape (data is resampled)': (1, 407, 492, 492)} 
+
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage1/pn_100.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.31408679, 0.78515601, 0.78515601]), 'spacing_transposed': array([1.31408679, 0.78515601, 0.78515601]), 'data.shape (data is transposed)': (1, 373, 512, 512)} 
+after:  {'spacing': array([1.20000005, 0.84179699, 0.84179699]), 'data.shape (data is resampled)': (1, 408, 478, 478)} 
+
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage1/pn_101.npz
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([2.70734286, 0.87646502, 0.87646502]), 'spacing_transposed': array([2.70734286, 0.87646502, 0.87646502]), 'data.shape (data is transposed)': (1, 181, 512, 512)} 
+after:  {'spacing': array([1.20000005, 0.84179699, 0.84179699]), 'data.shape (data is resampled)': (1, 408, 533, 533)} 
+
+1 3969
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage1/pn_102.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.30325401, 1.015625  , 1.015625  ]), 'spacing_transposed': array([1.30325401, 1.015625  , 1.015625  ]), 'data.shape (data is transposed)': (1, 435, 512, 512)} 
+after:  {'spacing': array([1.20000005, 0.84179699, 0.84179699]), 'data.shape (data is resampled)': (1, 472, 618, 618)} 
+
+1 2353
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage1/pn_103.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([2.5      , 0.9765625, 0.9765625]), 'spacing_transposed': array([2.5      , 0.9765625, 0.9765625]), 'data.shape (data is transposed)': (1, 193, 512, 512)} 
+after:  {'spacing': array([1.20000005, 0.84179699, 0.84179699]), 'data.shape (data is resampled)': (1, 402, 594, 594)} 
+
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage1/pn_134.npz
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([2.4000001 , 0.73199999, 0.73199999]), 'spacing_transposed': array([2.4000001 , 0.73199999, 0.73199999]), 'data.shape (data is transposed)': (1, 196, 512, 512)} 
+after:  {'spacing': array([1.20000005, 0.84179699, 0.84179699]), 'data.shape (data is resampled)': (1, 392, 445, 445)} 
+
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage1/pn_135.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([2.        , 0.68164062, 0.68164062]), 'spacing_transposed': array([2.        , 0.68164062, 0.68164062]), 'data.shape (data is transposed)': (1, 217, 512, 512)} 
+after:  {'spacing': array([1.20000005, 0.84179699, 0.84179699]), 'data.shape (data is resampled)': (1, 362, 415, 415)} 
+
+1 102
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage1/pn_136.npz
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([2.76992869, 0.75390601, 0.75390601]), 'spacing_transposed': array([2.76992869, 0.75390601, 0.75390601]), 'data.shape (data is transposed)': (1, 156, 512, 512)} 
+after:  {'spacing': array([1.20000005, 0.84179699, 0.84179699]), 'data.shape (data is resampled)': (1, 360, 459, 459)} 
+
+1 9233
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage1/pn_137.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.48778224, 0.9375    , 0.9375    ]), 'spacing_transposed': array([1.48778224, 0.9375    , 0.9375    ]), 'data.shape (data is transposed)': (1, 339, 512, 512)} 
+after:  {'spacing': array([1.20000005, 0.84179699, 0.84179699]), 'data.shape (data is resampled)': (1, 420, 570, 570)} 
+
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage1/pn_013.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.30630791, 1.00463903, 1.00463903]), 'spacing_transposed': array([1.30630791, 1.00463903, 1.00463903]), 'data.shape (data is transposed)': (1, 430, 512, 512)} 
+after:  {'spacing': array([1.20000005, 0.84179699, 0.84179699]), 'data.shape (data is resampled)': (1, 468, 611, 611)} 
+
+1 5025
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage1/pn_015.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.30163181, 0.963135  , 0.963135  ]), 'spacing_transposed': array([1.30163181, 0.963135  , 0.963135  ]), 'data.shape (data is transposed)': (1, 412, 512, 512)} 
+after:  {'spacing': array([1.20000005, 0.84179699, 0.84179699]), 'data.shape (data is resampled)': (1, 447, 586, 586)} 
+
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage1/pn_016.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([2.70341039, 0.93261701, 0.93261701]), 'spacing_transposed': array([2.70341039, 0.93261701, 0.93261701]), 'data.shape (data is transposed)': (1, 193, 512, 512)} 
+after:  {'spacing': array([1.20000005, 0.84179699, 0.84179699]), 'data.shape (data is resampled)': (1, 435, 567, 567)} 
+
+1 1399
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage1/pn_017.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.47995591, 0.97656202, 0.97656202]), 'spacing_transposed': array([1.47995591, 0.97656202, 0.97656202]), 'data.shape (data is transposed)': (1, 356, 512, 512)} 
+after:  {'spacing': array([1.20000005, 0.84179699, 0.84179699]), 'data.shape (data is resampled)': (1, 439, 594, 594)} 
+
+1 9831
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage1/pn_079.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.43689895, 0.94531202, 0.94531202]), 'spacing_transposed': array([1.43689895, 0.94531202, 0.94531202]), 'data.shape (data is transposed)': (1, 361, 512, 512)} 
+after:  {'spacing': array([1.20000005, 0.84179699, 0.84179699]), 'data.shape (data is resampled)': (1, 432, 575, 575)} 
+
+1 1763
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage1/pn_081.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.19656157, 0.79882801, 0.79882801]), 'spacing_transposed': array([1.19656157, 0.79882801, 0.79882801]), 'data.shape (data is transposed)': (1, 350, 512, 512)} 
+after:  {'spacing': array([1.20000005, 0.84179699, 0.84179699]), 'data.shape (data is resampled)': (1, 349, 486, 486)} 
+
+1 8455
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage1/pn_082.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.19671237, 0.72851598, 0.72851598]), 'spacing_transposed': array([1.19671237, 0.72851598, 0.72851598]), 'data.shape (data is transposed)': (1, 366, 512, 512)} 
+after:  {'spacing': array([1.20000005, 0.84179699, 0.84179699]), 'data.shape (data is resampled)': (1, 365, 443, 443)} 
+
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage1/pn_083.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.38610351, 0.89257801, 0.89257801]), 'spacing_transposed': array([1.38610351, 0.89257801, 0.89257801]), 'data.shape (data is transposed)': (1, 361, 512, 512)} 
+after:  {'spacing': array([1.20000005, 0.84179699, 0.84179699]), 'data.shape (data is resampled)': (1, 417, 543, 543)} 
+
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage1/pn_104.npz
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([3.18642426, 0.935938  , 0.935938  ]), 'spacing_transposed': array([3.18642426, 0.935938  , 0.935938  ]), 'data.shape (data is transposed)': (1, 161, 512, 512)} 
+after:  {'spacing': array([1.20000005, 0.84179699, 0.84179699]), 'data.shape (data is resampled)': (1, 428, 569, 569)} 
+
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage1/pn_105.npz
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([4.        , 0.71289062, 0.71289062]), 'spacing_transposed': array([4.        , 0.71289062, 0.71289062]), 'data.shape (data is transposed)': (1, 107, 512, 512)} 
+after:  {'spacing': array([1.20000005, 0.84179699, 0.84179699]), 'data.shape (data is resampled)': (1, 357, 434, 434)} 
+
+1 4598
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage1/pn_107.npz
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([2.45864654, 0.6875    , 0.6875    ]), 'spacing_transposed': array([2.45864654, 0.6875    , 0.6875    ]), 'data.shape (data is transposed)': (1, 267, 512, 512)} 
+after:  {'spacing': array([1.20000005, 0.84179699, 0.84179699]), 'data.shape (data is resampled)': (1, 547, 418, 418)} 
+
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage1/pn_108.npz
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([2.       , 0.6640625, 0.6640625]), 'spacing_transposed': array([2.       , 0.6640625, 0.6640625]), 'data.shape (data is transposed)': (1, 211, 512, 512)} 
+after:  {'spacing': array([1.20000005, 0.84179699, 0.84179699]), 'data.shape (data is resampled)': (1, 352, 404, 404)} 
+
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage1/pn_130.npz
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([5.        , 0.75976562, 0.75976562]), 'spacing_transposed': array([5.        , 0.75976562, 0.75976562]), 'data.shape (data is transposed)': (1, 102, 512, 512)} 
+after:  {'spacing': array([1.20000005, 0.84179699, 0.84179699]), 'data.shape (data is resampled)': (1, 425, 462, 462)} 
+
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage1/pn_131.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([2.5       , 0.91601562, 0.91601562]), 'spacing_transposed': array([2.5       , 0.91601562, 0.91601562]), 'data.shape (data is transposed)': (1, 183, 512, 512)} 
+after:  {'spacing': array([1.20000005, 0.84179699, 0.84179699]), 'data.shape (data is resampled)': (1, 381, 557, 557)} 
+
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage1/pn_132.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([2.68817759, 0.96557599, 0.96557599]), 'spacing_transposed': array([2.68817759, 0.96557599, 0.96557599]), 'data.shape (data is transposed)': (1, 199, 512, 512)} 
+after:  {'spacing': array([1.20000005, 0.84179699, 0.84179699]), 'data.shape (data is resampled)': (1, 446, 587, 587)} 
+
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_pretrained_PNET_TRANSFER_TEST_stage1/pn_133.npz
+Are we using the nonzero mask for normalization? OrderedDict([(0, False)])
+the median shape of the dataset is  [378.93422562 512.         512.        ]
+the max shape in the dataset is  [527.4183272  748.87634992 748.87634992]
+the min shape in the dataset is  [184.10701838 345.05554724 345.05554724]
+we don't want feature maps smaller than  4  in the bottleneck
+the transposed median shape of the dataset is  [378.93422562 512.         512.        ]
+[{'batch_size': 12, 'num_pool_per_axis': [7, 7], 'patch_size': array([512, 512]), 'median_patient_size_in_voxels': array([379, 512, 512]), 'current_spacing': array([1.35790586, 0.89550799, 0.89550799]), 'original_spacing': array([1.35790586, 0.89550799, 0.89550799]), 'pool_op_kernel_sizes': [[2, 2], [2, 2], [2, 2], [2, 2], [2, 2], [2, 2], [2, 2]], 'conv_kernel_sizes': [[3, 3], [3, 3], [3, 3], [3, 3], [3, 3], [3, 3], [3, 3], [3, 3]], 'do_dummy_2D_data_aug': False}]
+Initializing to run preprocessing
+npz folder: /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_raw_data_base/nnUNet_cropped_data/Task606_PNET_transfer
+output_folder: /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.31020641, 0.8125    , 0.8125    ]), 'spacing_transposed': array([1.31020641, 0.8125    , 0.8125    ]), 'data.shape (data is transposed)': (1, 396, 512, 512)} 
+after:  {'spacing': array([1.31020641, 0.89550799, 0.89550799]), 'data.shape (data is resampled)': (1, 396, 465, 465)} 
+
+normalization...
+normalization done
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_plans_v2.1_2D_stage0/pn_037.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.31305361, 1.03393602, 1.03393602]), 'spacing_transposed': array([1.31305361, 1.03393602, 1.03393602]), 'data.shape (data is transposed)': (1, 443, 512, 512)} 
+after:  {'spacing': array([1.31305361, 0.89550799, 0.89550799]), 'data.shape (data is resampled)': (1, 443, 591, 591)} 
+
+normalization...
+normalization done
+1 2397
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_plans_v2.1_2D_stage0/pn_038.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.31141818, 0.92895502, 0.92895502]), 'spacing_transposed': array([1.31141818, 0.92895502, 0.92895502]), 'data.shape (data is transposed)': (1, 398, 512, 512)} 
+after:  {'spacing': array([1.31141818, 0.89550799, 0.89550799]), 'data.shape (data is resampled)': (1, 398, 531, 531)} 
+
+normalization...
+normalization done
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_plans_v2.1_2D_stage0/pn_040.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.35877478, 0.97656202, 0.97656202]), 'spacing_transposed': array([1.35877478, 0.97656202, 0.97656202]), 'data.shape (data is transposed)': (1, 408, 512, 512)} 
+after:  {'spacing': array([1.35877478, 0.89550799, 0.89550799]), 'data.shape (data is resampled)': (1, 408, 558, 558)} 
+
+normalization...
+normalization done
+1 166
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_plans_v2.1_2D_stage0/pn_041.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.47995591, 0.97656202, 0.97656202]), 'spacing_transposed': array([1.47995591, 0.97656202, 0.97656202]), 'data.shape (data is transposed)': (1, 356, 512, 512)} 
+after:  {'spacing': array([1.47995591, 0.89550799, 0.89550799]), 'data.shape (data is resampled)': (1, 356, 558, 558)} 
+
+normalization...
+normalization done
+1 7076
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_plans_v2.1_2D_stage0/pn_079.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.43689895, 0.94531202, 0.94531202]), 'spacing_transposed': array([1.43689895, 0.94531202, 0.94531202]), 'data.shape (data is transposed)': (1, 361, 512, 512)} 
+after:  {'spacing': array([1.43689895, 0.89550799, 0.89550799]), 'data.shape (data is resampled)': (1, 361, 540, 540)} 
+
+normalization...
+normalization done
+1 1252
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_plans_v2.1_2D_stage0/pn_081.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.19656157, 0.79882801, 0.79882801]), 'spacing_transposed': array([1.19656157, 0.79882801, 0.79882801]), 'data.shape (data is transposed)': (1, 350, 512, 512)} 
+after:  {'spacing': array([1.19656157, 0.89550799, 0.89550799]), 'data.shape (data is resampled)': (1, 350, 457, 457)} 
+
+normalization...
+normalization done
+1 7512
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_plans_v2.1_2D_stage0/pn_082.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.19671237, 0.72851598, 0.72851598]), 'spacing_transposed': array([1.19671237, 0.72851598, 0.72851598]), 'data.shape (data is transposed)': (1, 366, 512, 512)} 
+after:  {'spacing': array([1.19671237, 0.89550799, 0.89550799]), 'data.shape (data is resampled)': (1, 366, 417, 417)} 
+
+normalization...
+normalization done
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_plans_v2.1_2D_stage0/pn_083.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([2.4000001 , 0.80500001, 0.80500001]), 'spacing_transposed': array([2.4000001 , 0.80500001, 0.80500001]), 'data.shape (data is transposed)': (1, 251, 512, 512)} 
+after:  {'spacing': array([2.4000001 , 0.89550799, 0.89550799]), 'data.shape (data is resampled)': (1, 251, 460, 460)} 
+
+normalization...
+normalization done
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_plans_v2.1_2D_stage0/pn_118.npz
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([3.        , 0.73632812, 0.73632812]), 'spacing_transposed': array([3.        , 0.73632812, 0.73632812]), 'data.shape (data is transposed)': (1, 164, 512, 512)} 
+after:  {'spacing': array([3.        , 0.89550799, 0.89550799]), 'data.shape (data is resampled)': (1, 164, 421, 421)} 
+
+normalization...
+normalization done
+1 281
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_plans_v2.1_2D_stage0/pn_119.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.25      , 0.70703125, 0.70703125]), 'spacing_transposed': array([1.25      , 0.70703125, 0.70703125]), 'data.shape (data is transposed)': (1, 355, 512, 512)} 
+after:  {'spacing': array([1.25      , 0.89550799, 0.89550799]), 'data.shape (data is resampled)': (1, 355, 404, 404)} 
+
+normalization...
+normalization done
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_plans_v2.1_2D_stage0/pn_120.npz
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([2.82965922, 0.97070301, 0.97070301]), 'spacing_transposed': array([2.82965922, 0.97070301, 0.97070301]), 'data.shape (data is transposed)': (1, 195, 512, 512)} 
+after:  {'spacing': array([2.82965922, 0.89550799, 0.89550799]), 'data.shape (data is resampled)': (1, 195, 555, 555)} 
+
+normalization...
+normalization done
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_plans_v2.1_2D_stage0/pn_121.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.31537688, 0.92529303, 0.92529303]), 'spacing_transposed': array([1.31537688, 0.92529303, 0.92529303]), 'data.shape (data is transposed)': (1, 396, 512, 512)} 
+after:  {'spacing': array([1.31537688, 0.89550799, 0.89550799]), 'data.shape (data is resampled)': (1, 396, 529, 529)} 
+
+normalization...
+normalization done
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_plans_v2.1_2D_stage0/pn_028.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.31713152, 0.93139601, 0.93139601]), 'spacing_transposed': array([1.31713152, 0.93139601, 0.93139601]), 'data.shape (data is transposed)': (1, 399, 512, 512)} 
+after:  {'spacing': array([1.31713152, 0.89550799, 0.89550799]), 'data.shape (data is resampled)': (1, 399, 533, 533)} 
+
+normalization...
+normalization done
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_plans_v2.1_2D_stage0/pn_029.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.30095553, 0.87890601, 0.87890601]), 'spacing_transposed': array([1.30095553, 0.87890601, 0.87890601]), 'data.shape (data is transposed)': (1, 376, 512, 512)} 
+after:  {'spacing': array([1.30095553, 0.89550799, 0.89550799]), 'data.shape (data is resampled)': (1, 376, 503, 503)} 
+
+normalization...
+normalization done
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_plans_v2.1_2D_stage0/pn_030.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.3056612 , 0.86914098, 0.86914098]), 'spacing_transposed': array([1.3056612 , 0.86914098, 0.86914098]), 'data.shape (data is transposed)': (1, 434, 512, 512)} 
+after:  {'spacing': array([1.3056612 , 0.89550799, 0.89550799]), 'data.shape (data is resampled)': (1, 434, 497, 497)} 
+
+normalization...
+normalization done
+1 8930
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_plans_v2.1_2D_stage0/pn_032.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.30699027, 0.99731398, 0.99731398]), 'spacing_transposed': array([1.30699027, 0.99731398, 0.99731398]), 'data.shape (data is transposed)': (1, 427, 512, 512)} 
+after:  {'spacing': array([1.30699027, 0.89550799, 0.89550799]), 'data.shape (data is resampled)': (1, 427, 570, 570)} 
+
+normalization...
+normalization done
+1 50155
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_plans_v2.1_2D_stage0/pn_074.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.35703695, 0.79296899, 0.79296899]), 'spacing_transposed': array([1.35703695, 0.79296899, 0.79296899]), 'data.shape (data is transposed)': (1, 332, 512, 512)} 
+after:  {'spacing': array([1.35703695, 0.89550799, 0.89550799]), 'data.shape (data is resampled)': (1, 332, 453, 453)} 
+
+normalization...
+normalization done
+1 641
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_plans_v2.1_2D_stage0/pn_075.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.19684219, 0.76953101, 0.76953101]), 'spacing_transposed': array([1.19684219, 0.76953101, 0.76953101]), 'data.shape (data is transposed)': (1, 381, 512, 512)} 
+after:  {'spacing': array([1.19684219, 0.89550799, 0.89550799]), 'data.shape (data is resampled)': (1, 381, 440, 440)} 
+
+normalization...
+normalization done
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_plans_v2.1_2D_stage0/pn_077.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.39326143, 0.9375    , 0.9375    ]), 'spacing_transposed': array([1.39326143, 0.9375    , 0.9375    ]), 'data.shape (data is transposed)': (1, 376, 512, 512)} 
+after:  {'spacing': array([1.39326143, 0.89550799, 0.89550799]), 'data.shape (data is resampled)': (1, 376, 536, 536)} 
+
+normalization...
+normalization done
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_plans_v2.1_2D_stage0/pn_078.npz
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([5.47612715, 0.78125   , 0.78125   ]), 'spacing_transposed': array([5.47612715, 0.78125   , 0.78125   ]), 'data.shape (data is transposed)': (1, 82, 512, 512)} 
+after:  {'spacing': array([5.47612715, 0.89550799, 0.89550799]), 'data.shape (data is resampled)': (1, 82, 447, 447)} 
+
+normalization...
+normalization done
+1 371
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_plans_v2.1_2D_stage0/pn_109.npz
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([2.5       , 0.76599997, 0.76599997]), 'spacing_transposed': array([2.5       , 0.76599997, 0.76599997]), 'data.shape (data is transposed)': (1, 176, 512, 512)} 
+after:  {'spacing': array([2.5       , 0.89550799, 0.89550799]), 'data.shape (data is resampled)': (1, 176, 438, 438)} 
+
+normalization...
+normalization done
+1 2551
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_plans_v2.1_2D_stage0/pn_111.npz
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([2.5       , 0.60351562, 0.60351562]), 'spacing_transposed': array([2.5       , 0.60351562, 0.60351562]), 'data.shape (data is transposed)': (1, 100, 512, 512)} 
+after:  {'spacing': array([2.5       , 0.89550799, 0.89550799]), 'data.shape (data is resampled)': (1, 100, 345, 345)} 
+
+normalization...
+normalization done
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_plans_v2.1_2D_stage0/pn_112.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([2.        , 0.80859375, 0.80859375]), 'spacing_transposed': array([2.        , 0.80859375, 0.80859375]), 'data.shape (data is transposed)': (1, 330, 512, 512)} 
+after:  {'spacing': array([2.        , 0.89550799, 0.89550799]), 'data.shape (data is resampled)': (1, 330, 462, 462)} 
+
+normalization...
+normalization done
+1 688
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_plans_v2.1_2D_stage0/pn_113.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.5       , 0.78100002, 0.78100002]), 'spacing_transposed': array([1.5       , 0.78100002, 0.78100002]), 'data.shape (data is transposed)': (1, 397, 512, 512)} 
+after:  {'spacing': array([1.5       , 0.89550799, 0.89550799]), 'data.shape (data is resampled)': (1, 397, 447, 447)} 
+
+normalization...
+normalization done
+1 1621
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_plans_v2.1_2D_stage0/pn_122.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([2.        , 0.69921875, 0.69921875]), 'spacing_transposed': array([2.        , 0.69921875, 0.69921875]), 'data.shape (data is transposed)': (1, 200, 512, 512)} 
+after:  {'spacing': array([2.        , 0.89550799, 0.89550799]), 'data.shape (data is resampled)': (1, 200, 400, 400)} 
+
+normalization...
+normalization done
+1 1227
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_plans_v2.1_2D_stage0/pn_123.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.25    , 0.765625, 0.765625]), 'spacing_transposed': array([1.25    , 0.765625, 0.765625]), 'data.shape (data is transposed)': (1, 323, 512, 512)} 
+after:  {'spacing': array([1.25      , 0.89550799, 0.89550799]), 'data.shape (data is resampled)': (1, 323, 438, 438)} 
+
+normalization...
+normalization done
+1 879
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_plans_v2.1_2D_stage0/pn_124.npz
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([2.5       , 0.81054688, 0.81054688]), 'spacing_transposed': array([2.5       , 0.81054688, 0.81054688]), 'data.shape (data is transposed)': (1, 110, 512, 512)} 
+after:  {'spacing': array([2.5       , 0.89550799, 0.89550799]), 'data.shape (data is resampled)': (1, 110, 463, 463)} 
+
+normalization...
+normalization done
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_plans_v2.1_2D_stage0/pn_125.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.19680858, 0.78125   , 0.78125   ]), 'spacing_transposed': array([1.19680858, 0.78125   , 0.78125   ]), 'data.shape (data is transposed)': (1, 377, 512, 512)} 
+after:  {'spacing': array([1.19680858, 0.89550799, 0.89550799]), 'data.shape (data is resampled)': (1, 377, 447, 447)} 
+
+normalization...
+normalization done
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_plans_v2.1_2D_stage0/pn_001.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.34646189, 0.78515601, 0.78515601]), 'spacing_transposed': array([1.34646189, 0.78515601, 0.78515601]), 'data.shape (data is transposed)': (1, 333, 512, 512)} 
+after:  {'spacing': array([1.34646189, 0.89550799, 0.89550799]), 'data.shape (data is resampled)': (1, 333, 449, 449)} 
+
+normalization...
+normalization done
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_plans_v2.1_2D_stage0/pn_002.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.30437541, 0.94848597, 0.94848597]), 'spacing_transposed': array([1.30437541, 0.94848597, 0.94848597]), 'data.shape (data is transposed)': (1, 406, 512, 512)} 
+after:  {'spacing': array([1.30437541, 0.89550799, 0.89550799]), 'data.shape (data is resampled)': (1, 406, 542, 542)} 
+
+normalization...
+normalization done
+1 22
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_plans_v2.1_2D_stage0/pn_003.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.33229589, 0.85449201, 0.85449201]), 'spacing_transposed': array([1.33229589, 0.85449201, 0.85449201]), 'data.shape (data is transposed)': (1, 366, 512, 512)} 
+after:  {'spacing': array([1.33229589, 0.89550799, 0.89550799]), 'data.shape (data is resampled)': (1, 366, 489, 489)} 
+
+normalization...
+normalization done
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_plans_v2.1_2D_stage0/pn_006.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.33749998, 0.83862299, 0.83862299]), 'spacing_transposed': array([1.33749998, 0.83862299, 0.83862299]), 'data.shape (data is transposed)': (1, 359, 512, 512)} 
+after:  {'spacing': array([1.33749998, 0.89550799, 0.89550799]), 'data.shape (data is resampled)': (1, 359, 479, 479)} 
+
+normalization...
+normalization done
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_plans_v2.1_2D_stage0/pn_053.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.32014322, 1.04492199, 1.04492199]), 'spacing_transposed': array([1.32014322, 1.04492199, 1.04492199]), 'data.shape (data is transposed)': (1, 447, 512, 512)} 
+after:  {'spacing': array([1.32014322, 0.89550799, 0.89550799]), 'data.shape (data is resampled)': (1, 447, 597, 597)} 
+
+normalization...
+normalization done
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_plans_v2.1_2D_stage0/pn_056.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.31013811, 1.01684594, 1.01684594]), 'spacing_transposed': array([1.31013811, 1.01684594, 1.01684594]), 'data.shape (data is transposed)': (1, 435, 512, 512)} 
+after:  {'spacing': array([1.31013811, 0.89550799, 0.89550799]), 'data.shape (data is resampled)': (1, 435, 581, 581)} 
+
+normalization...
+normalization done
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_plans_v2.1_2D_stage0/pn_057.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.32040524, 0.97460902, 0.97460902]), 'spacing_transposed': array([1.32040524, 0.97460902, 0.97460902]), 'data.shape (data is transposed)': (1, 451, 512, 512)} 
+after:  {'spacing': array([1.32040524, 0.89550799, 0.89550799]), 'data.shape (data is resampled)': (1, 451, 557, 557)} 
+
+normalization...
+normalization done
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_plans_v2.1_2D_stage0/pn_058.npz
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([2.69870663, 0.85156202, 0.85156202]), 'spacing_transposed': array([2.69870663, 0.85156202, 0.85156202]), 'data.shape (data is transposed)': (1, 176, 512, 512)} 
+after:  {'spacing': array([2.69870663, 0.89550799, 0.89550799]), 'data.shape (data is resampled)': (1, 176, 487, 487)} 
+
+normalization...
+normalization done
+1 2161
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_plans_v2.1_2D_stage0/pn_114.npz
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([2.        , 0.62890625, 0.62890625]), 'spacing_transposed': array([2.        , 0.62890625, 0.62890625]), 'data.shape (data is transposed)': (1, 327, 512, 512)} 
+after:  {'spacing': array([2.        , 0.89550799, 0.89550799]), 'data.shape (data is resampled)': (1, 327, 360, 360)} 
+
+normalization...
+normalization done
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_plans_v2.1_2D_stage0/pn_115.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([2.65253496, 1.30981398, 1.30981398]), 'spacing_transposed': array([2.65253496, 1.30981398, 1.30981398]), 'data.shape (data is transposed)': (1, 270, 512, 512)} 
+after:  {'spacing': array([2.65253496, 0.89550799, 0.89550799]), 'data.shape (data is resampled)': (1, 270, 749, 749)} 
+
+normalization...
+normalization done
+1 6774
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_plans_v2.1_2D_stage0/pn_116.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([2.4000001 , 0.87699997, 0.87699997]), 'spacing_transposed': array([2.4000001 , 0.87699997, 0.87699997]), 'data.shape (data is transposed)': (1, 196, 512, 512)} 
+after:  {'spacing': array([2.4000001 , 0.89550799, 0.89550799]), 'data.shape (data is resampled)': (1, 196, 501, 501)} 
+
+normalization...
+normalization done
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_plans_v2.1_2D_stage0/pn_117.npz
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([4.79017687, 0.94921899, 0.94921899]), 'spacing_transposed': array([4.79017687, 0.94921899, 0.94921899]), 'data.shape (data is transposed)': (1, 109, 512, 512)} 
+after:  {'spacing': array([4.79017687, 0.89550799, 0.89550799]), 'data.shape (data is resampled)': (1, 109, 543, 543)} 
+
+normalization...
+normalization done
+1 1897
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_plans_v2.1_2D_stage0/pn_138.npz
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([3.26185775, 0.89218801, 0.89218801]), 'spacing_transposed': array([3.26185775, 0.89218801, 0.89218801]), 'data.shape (data is transposed)': (1, 154, 512, 512)} 
+after:  {'spacing': array([3.26185775, 0.89550799, 0.89550799]), 'data.shape (data is resampled)': (1, 154, 510, 510)} 
+
+normalization...
+normalization done
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_plans_v2.1_2D_stage0/pn_139.npz
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([2.73475361, 0.828125  , 0.828125  ]), 'spacing_transposed': array([2.73475361, 0.828125  , 0.828125  ]), 'data.shape (data is transposed)': (1, 171, 512, 512)} 
+after:  {'spacing': array([2.73475361, 0.89550799, 0.89550799]), 'data.shape (data is resampled)': (1, 171, 473, 473)} 
+
+normalization...
+normalization done
+1 8231
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_plans_v2.1_2D_stage0/pn_140.npz
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([4.        , 0.71484375, 0.71484375]), 'spacing_transposed': array([4.        , 0.71484375, 0.71484375]), 'data.shape (data is transposed)': (1, 107, 512, 512)} 
+after:  {'spacing': array([4.        , 0.89550799, 0.89550799]), 'data.shape (data is resampled)': (1, 107, 409, 409)} 
+
+normalization...
+normalization done
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_plans_v2.1_2D_stage0/pn_142.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.38323545, 0.87890601, 0.87890601]), 'spacing_transposed': array([1.38323545, 0.87890601, 0.87890601]), 'data.shape (data is transposed)': (1, 357, 512, 512)} 
+after:  {'spacing': array([1.38323545, 0.89550799, 0.89550799]), 'data.shape (data is resampled)': (1, 357, 503, 503)} 
+
+normalization...
+normalization done
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_plans_v2.1_2D_stage0/pn_023.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.33871126, 0.859375  , 0.859375  ]), 'spacing_transposed': array([1.33871126, 0.859375  , 0.859375  ]), 'data.shape (data is transposed)': (1, 368, 512, 512)} 
+after:  {'spacing': array([1.33871126, 0.89550799, 0.89550799]), 'data.shape (data is resampled)': (1, 368, 491, 491)} 
+
+normalization...
+normalization done
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_plans_v2.1_2D_stage0/pn_024.npz
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([2.69192219, 1.08276403, 1.08276403]), 'spacing_transposed': array([2.69192219, 1.08276403, 1.08276403]), 'data.shape (data is transposed)': (1, 223, 512, 512)} 
+after:  {'spacing': array([2.69192219, 0.89550799, 0.89550799]), 'data.shape (data is resampled)': (1, 223, 619, 619)} 
+
+normalization...
+normalization done
+1 582
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_plans_v2.1_2D_stage0/pn_026.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.28830099, 0.92407203, 0.92407203]), 'spacing_transposed': array([1.28830099, 0.92407203, 0.92407203]), 'data.shape (data is transposed)': (1, 396, 512, 512)} 
+after:  {'spacing': array([1.28830099, 0.89550799, 0.89550799]), 'data.shape (data is resampled)': (1, 396, 528, 528)} 
+
+normalization...
+normalization done
+1 1406
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_plans_v2.1_2D_stage0/pn_027.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.32839775, 1.015625  , 1.015625  ]), 'spacing_transposed': array([1.32839775, 1.015625  , 1.015625  ]), 'data.shape (data is transposed)': (1, 435, 512, 512)} 
+after:  {'spacing': array([1.32839775, 0.89550799, 0.89550799]), 'data.shape (data is resampled)': (1, 435, 581, 581)} 
+
+normalization...
+normalization done
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_plans_v2.1_2D_stage0/pn_042.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.30726922, 0.906982  , 0.906982  ]), 'spacing_transposed': array([1.30726922, 0.906982  , 0.906982  ]), 'data.shape (data is transposed)': (1, 388, 512, 512)} 
+after:  {'spacing': array([1.30726922, 0.89550799, 0.89550799]), 'data.shape (data is resampled)': (1, 388, 519, 519)} 
+
+normalization...
+normalization done
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_plans_v2.1_2D_stage0/pn_044.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.31658089, 0.83203101, 0.83203101]), 'spacing_transposed': array([1.31658089, 0.83203101, 0.83203101]), 'data.shape (data is transposed)': (1, 392, 512, 512)} 
+after:  {'spacing': array([1.31658089, 0.89550799, 0.89550799]), 'data.shape (data is resampled)': (1, 392, 476, 476)} 
+
+normalization...
+normalization done
+1 13938
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_plans_v2.1_2D_stage0/pn_045.npz
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([2.68825269, 0.97656298, 0.97656298]), 'spacing_transposed': array([2.68825269, 0.97656298, 0.97656298]), 'data.shape (data is transposed)': (1, 254, 512, 512)} 
+after:  {'spacing': array([2.68825269, 0.89550799, 0.89550799]), 'data.shape (data is resampled)': (1, 254, 558, 558)} 
+
+normalization...
+normalization done
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_plans_v2.1_2D_stage0/pn_046.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.1970371 , 0.84765601, 0.84765601]), 'spacing_transposed': array([1.1970371 , 0.84765601, 0.84765601]), 'data.shape (data is transposed)': (1, 406, 512, 512)} 
+after:  {'spacing': array([1.1970371 , 0.89550799, 0.89550799]), 'data.shape (data is resampled)': (1, 406, 485, 485)} 
+
+normalization...
+normalization done
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_plans_v2.1_2D_stage0/pn_084.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.30839634, 0.94604498, 0.94604498]), 'spacing_transposed': array([1.30839634, 0.94604498, 0.94604498]), 'data.shape (data is transposed)': (1, 405, 512, 512)} 
+after:  {'spacing': array([1.30839634, 0.89550799, 0.89550799]), 'data.shape (data is resampled)': (1, 405, 541, 541)} 
+
+normalization...
+normalization done
+1 112
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_plans_v2.1_2D_stage0/pn_085.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.30359542, 0.97656202, 0.97656202]), 'spacing_transposed': array([1.30359542, 0.97656202, 0.97656202]), 'data.shape (data is transposed)': (1, 418, 512, 512)} 
+after:  {'spacing': array([1.30359542, 0.89550799, 0.89550799]), 'data.shape (data is resampled)': (1, 418, 558, 558)} 
+
+normalization...
+normalization done
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_plans_v2.1_2D_stage0/pn_086.npz
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([2.74424505, 0.83129901, 0.83129901]), 'spacing_transposed': array([2.74424505, 0.83129901, 0.83129901]), 'data.shape (data is transposed)': (1, 172, 512, 512)} 
+after:  {'spacing': array([2.74424505, 0.89550799, 0.89550799]), 'data.shape (data is resampled)': (1, 172, 475, 475)} 
+
+normalization...
+normalization done
+1 9898
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_plans_v2.1_2D_stage0/pn_087.npz
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([2.       , 0.6640625, 0.6640625]), 'spacing_transposed': array([2.       , 0.6640625, 0.6640625]), 'data.shape (data is transposed)': (1, 211, 512, 512)} 
+after:  {'spacing': array([2.        , 0.89550799, 0.89550799]), 'data.shape (data is resampled)': (1, 211, 380, 380)} 
+
+normalization...
+normalization done
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_plans_v2.1_2D_stage0/pn_130.npz
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([5.        , 0.75976562, 0.75976562]), 'spacing_transposed': array([5.        , 0.75976562, 0.75976562]), 'data.shape (data is transposed)': (1, 102, 512, 512)} 
+after:  {'spacing': array([5.        , 0.89550799, 0.89550799]), 'data.shape (data is resampled)': (1, 102, 434, 434)} 
+
+normalization...
+normalization done
+1 2704
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_plans_v2.1_2D_stage0/pn_131.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([2.5       , 0.91601562, 0.91601562]), 'spacing_transposed': array([2.5       , 0.91601562, 0.91601562]), 'data.shape (data is transposed)': (1, 183, 512, 512)} 
+after:  {'spacing': array([2.5       , 0.89550799, 0.89550799]), 'data.shape (data is resampled)': (1, 183, 524, 524)} 
+
+normalization...
+normalization done
+1 8941
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_plans_v2.1_2D_stage0/pn_132.npz
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([2.68817759, 0.96557599, 0.96557599]), 'spacing_transposed': array([2.68817759, 0.96557599, 0.96557599]), 'data.shape (data is transposed)': (1, 199, 512, 512)} 
+after:  {'spacing': array([2.68817759, 0.89550799, 0.89550799]), 'data.shape (data is resampled)': (1, 199, 552, 552)} 
+
+normalization...
+normalization done
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_plans_v2.1_2D_stage0/pn_133.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.30227184, 0.83252001, 0.83252001]), 'spacing_transposed': array([1.30227184, 0.83252001, 0.83252001]), 'data.shape (data is transposed)': (1, 357, 512, 512)} 
+after:  {'spacing': array([1.30227184, 0.89550799, 0.89550799]), 'data.shape (data is resampled)': (1, 357, 476, 476)} 
+
+normalization...
+normalization done
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_plans_v2.1_2D_stage0/pn_019.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.3335135, 0.992432 , 0.992432 ]), 'spacing_transposed': array([1.3335135, 0.992432 , 0.992432 ]), 'data.shape (data is transposed)': (1, 425, 512, 512)} 
+after:  {'spacing': array([1.3335135 , 0.89550799, 0.89550799]), 'data.shape (data is resampled)': (1, 425, 567, 567)} 
+
+normalization...
+normalization done
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_plans_v2.1_2D_stage0/pn_020.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.3665055 , 0.94921899, 0.94921899]), 'spacing_transposed': array([1.3665055 , 0.94921899, 0.94921899]), 'data.shape (data is transposed)': (1, 393, 512, 512)} 
+after:  {'spacing': array([1.3665055 , 0.89550799, 0.89550799]), 'data.shape (data is resampled)': (1, 393, 543, 543)} 
+
+normalization...
+normalization done
+1 3394
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_plans_v2.1_2D_stage0/pn_021.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.19717658, 0.82031202, 0.82031202]), 'spacing_transposed': array([1.19717658, 0.82031202, 0.82031202]), 'data.shape (data is transposed)': (1, 426, 512, 512)} 
+after:  {'spacing': array([1.19717658, 0.89550799, 0.89550799]), 'data.shape (data is resampled)': (1, 426, 469, 469)} 
+
+normalization...
+normalization done
+1 4845
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_plans_v2.1_2D_stage0/pn_022.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.31524646, 1.05590796, 1.05590796]), 'spacing_transposed': array([1.31524646, 1.05590796, 1.05590796]), 'data.shape (data is transposed)': (1, 452, 512, 512)} 
+after:  {'spacing': array([1.31524646, 0.89550799, 0.89550799]), 'data.shape (data is resampled)': (1, 452, 604, 604)} 
+
+normalization...
+normalization done
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_plans_v2.1_2D_stage0/pn_063.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.25    , 0.703125, 0.703125]), 'spacing_transposed': array([1.25    , 0.703125, 0.703125]), 'data.shape (data is transposed)': (1, 374, 512, 512)} 
+after:  {'spacing': array([1.25      , 0.89550799, 0.89550799]), 'data.shape (data is resampled)': (1, 374, 402, 402)} 
+
+normalization...
+normalization done
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_plans_v2.1_2D_stage0/pn_064.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.36249602, 0.85351598, 0.85351598]), 'spacing_transposed': array([1.36249602, 0.85351598, 0.85351598]), 'data.shape (data is transposed)': (1, 355, 512, 512)} 
+after:  {'spacing': array([1.36249602, 0.89550799, 0.89550799]), 'data.shape (data is resampled)': (1, 355, 488, 488)} 
+
+normalization...
+normalization done
+1 8926
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_plans_v2.1_2D_stage0/pn_065.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.33600628, 0.79345697, 0.79345697]), 'spacing_transposed': array([1.33600628, 0.79345697, 0.79345697]), 'data.shape (data is transposed)': (1, 340, 512, 512)} 
+after:  {'spacing': array([1.33600628, 0.89550799, 0.89550799]), 'data.shape (data is resampled)': (1, 340, 454, 454)} 
+
+normalization...
+normalization done
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_plans_v2.1_2D_stage0/pn_066.npz
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([2.7266624 , 0.87768602, 0.87768602]), 'spacing_transposed': array([2.7266624 , 0.87768602, 0.87768602]), 'data.shape (data is transposed)': (1, 181, 512, 512)} 
+after:  {'spacing': array([2.7266624 , 0.89550799, 0.89550799]), 'data.shape (data is resampled)': (1, 181, 502, 502)} 
+
+normalization...
+normalization done
+1 5384
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_plans_v2.1_2D_stage0/pn_093.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.39755428, 0.97656202, 0.97656202]), 'spacing_transposed': array([1.39755428, 0.97656202, 0.97656202]), 'data.shape (data is transposed)': (1, 390, 512, 512)} 
+after:  {'spacing': array([1.39755428, 0.89550799, 0.89550799]), 'data.shape (data is resampled)': (1, 390, 558, 558)} 
+
+normalization...
+normalization done
+1 1386
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_plans_v2.1_2D_stage0/pn_097.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.33275914, 0.94848597, 0.94848597]), 'spacing_transposed': array([1.33275914, 0.94848597, 0.94848597]), 'data.shape (data is transposed)': (1, 406, 512, 512)} 
+after:  {'spacing': array([1.33275914, 0.89550799, 0.89550799]), 'data.shape (data is resampled)': (1, 406, 542, 542)} 
+
+normalization...
+normalization done
+1 2147
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_plans_v2.1_2D_stage0/pn_098.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.31012595, 0.89843798, 0.89843798]), 'spacing_transposed': array([1.31012595, 0.89843798, 0.89843798]), 'data.shape (data is transposed)': (1, 385, 512, 512)} 
+after:  {'spacing': array([1.31012595, 0.89550799, 0.89550799]), 'data.shape (data is resampled)': (1, 385, 514, 514)} 
+
+normalization...
+normalization done
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_plans_v2.1_2D_stage0/pn_099.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.48778224, 0.9375    , 0.9375    ]), 'spacing_transposed': array([1.48778224, 0.9375    , 0.9375    ]), 'data.shape (data is transposed)': (1, 339, 512, 512)} 
+after:  {'spacing': array([1.48778224, 0.89550799, 0.89550799]), 'data.shape (data is resampled)': (1, 339, 536, 536)} 
+
+normalization...
+normalization done
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_plans_v2.1_2D_stage0/pn_013.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.30630791, 1.00463903, 1.00463903]), 'spacing_transposed': array([1.30630791, 1.00463903, 1.00463903]), 'data.shape (data is transposed)': (1, 430, 512, 512)} 
+after:  {'spacing': array([1.30630791, 0.89550799, 0.89550799]), 'data.shape (data is resampled)': (1, 430, 574, 574)} 
+
+normalization...
+normalization done
+1 4032
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_plans_v2.1_2D_stage0/pn_015.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.30163181, 0.963135  , 0.963135  ]), 'spacing_transposed': array([1.30163181, 0.963135  , 0.963135  ]), 'data.shape (data is transposed)': (1, 412, 512, 512)} 
+after:  {'spacing': array([1.30163181, 0.89550799, 0.89550799]), 'data.shape (data is resampled)': (1, 412, 551, 551)} 
+
+normalization...
+normalization done
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_plans_v2.1_2D_stage0/pn_016.npz
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([2.70341039, 0.93261701, 0.93261701]), 'spacing_transposed': array([2.70341039, 0.93261701, 0.93261701]), 'data.shape (data is transposed)': (1, 193, 512, 512)} 
+after:  {'spacing': array([2.70341039, 0.89550799, 0.89550799]), 'data.shape (data is resampled)': (1, 193, 533, 533)} 
+
+normalization...
+normalization done
+1 543
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_plans_v2.1_2D_stage0/pn_017.npz
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([2.71732521, 0.94726598, 0.94726598]), 'spacing_transposed': array([2.71732521, 0.94726598, 0.94726598]), 'data.shape (data is transposed)': (1, 196, 512, 512)} 
+after:  {'spacing': array([2.71732521, 0.89550799, 0.89550799]), 'data.shape (data is resampled)': (1, 196, 542, 542)} 
+
+normalization...
+normalization done
+1 2805
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_plans_v2.1_2D_stage0/pn_068.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.32553744, 0.98754901, 0.98754901]), 'spacing_transposed': array([1.32553744, 0.98754901, 0.98754901]), 'data.shape (data is transposed)': (1, 423, 512, 512)} 
+after:  {'spacing': array([1.32553744, 0.89550799, 0.89550799]), 'data.shape (data is resampled)': (1, 423, 565, 565)} 
+
+normalization...
+normalization done
+1 451
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_plans_v2.1_2D_stage0/pn_069.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.3672359 , 0.97656202, 0.97656202]), 'spacing_transposed': array([1.3672359 , 0.97656202, 0.97656202]), 'data.shape (data is transposed)': (1, 404, 512, 512)} 
+after:  {'spacing': array([1.3672359 , 0.89550799, 0.89550799]), 'data.shape (data is resampled)': (1, 404, 558, 558)} 
+
+normalization...
+normalization done
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_plans_v2.1_2D_stage0/pn_070.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.31681347, 0.75390601, 0.75390601]), 'spacing_transposed': array([1.31681347, 0.75390601, 0.75390601]), 'data.shape (data is transposed)': (1, 354, 512, 512)} 
+after:  {'spacing': array([1.31681347, 0.89550799, 0.89550799]), 'data.shape (data is resampled)': (1, 354, 431, 431)} 
+
+normalization...
+normalization done
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_plans_v2.1_2D_stage0/pn_072.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.38610351, 0.89257801, 0.89257801]), 'spacing_transposed': array([1.38610351, 0.89257801, 0.89257801]), 'data.shape (data is transposed)': (1, 361, 512, 512)} 
+after:  {'spacing': array([1.38610351, 0.89550799, 0.89550799]), 'data.shape (data is resampled)': (1, 361, 510, 510)} 
+
+normalization...
+normalization done
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_plans_v2.1_2D_stage0/pn_104.npz
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([3.18642426, 0.935938  , 0.935938  ]), 'spacing_transposed': array([3.18642426, 0.935938  , 0.935938  ]), 'data.shape (data is transposed)': (1, 161, 512, 512)} 
+after:  {'spacing': array([3.18642426, 0.89550799, 0.89550799]), 'data.shape (data is resampled)': (1, 161, 535, 535)} 
+
+normalization...
+normalization done
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_plans_v2.1_2D_stage0/pn_105.npz
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([4.        , 0.71289062, 0.71289062]), 'spacing_transposed': array([4.        , 0.71289062, 0.71289062]), 'data.shape (data is transposed)': (1, 107, 512, 512)} 
+after:  {'spacing': array([4.        , 0.89550799, 0.89550799]), 'data.shape (data is resampled)': (1, 107, 408, 408)} 
+
+normalization...
+normalization done
+1 1189
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_plans_v2.1_2D_stage0/pn_107.npz
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([2.45864654, 0.6875    , 0.6875    ]), 'spacing_transposed': array([2.45864654, 0.6875    , 0.6875    ]), 'data.shape (data is transposed)': (1, 267, 512, 512)} 
+after:  {'spacing': array([2.45864654, 0.89550799, 0.89550799]), 'data.shape (data is resampled)': (1, 267, 393, 393)} 
+
+normalization...
+normalization done
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_plans_v2.1_2D_stage0/pn_108.npz
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([3.        , 0.77929688, 0.77929688]), 'spacing_transposed': array([3.        , 0.77929688, 0.77929688]), 'data.shape (data is transposed)': (1, 159, 512, 512)} 
+after:  {'spacing': array([3.        , 0.89550799, 0.89550799]), 'data.shape (data is resampled)': (1, 159, 446, 446)} 
+
+normalization...
+normalization done
+1 2715
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_plans_v2.1_2D_stage0/pn_126.npz
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([2.5       , 0.60351562, 0.60351562]), 'spacing_transposed': array([2.5       , 0.60351562, 0.60351562]), 'data.shape (data is transposed)': (1, 100, 512, 512)} 
+after:  {'spacing': array([2.5       , 0.89550799, 0.89550799]), 'data.shape (data is resampled)': (1, 100, 345, 345)} 
+
+normalization...
+normalization done
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_plans_v2.1_2D_stage0/pn_127.npz
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([2.68589091, 0.84960902, 0.84960902]), 'spacing_transposed': array([2.68589091, 0.84960902, 0.84960902]), 'data.shape (data is transposed)': (1, 176, 512, 512)} 
+after:  {'spacing': array([2.68589091, 0.89550799, 0.89550799]), 'data.shape (data is resampled)': (1, 176, 486, 486)} 
+
+normalization...
+normalization done
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_plans_v2.1_2D_stage0/pn_128.npz
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([2.5       , 0.83203125, 0.83203125]), 'spacing_transposed': array([2.5       , 0.83203125, 0.83203125]), 'data.shape (data is transposed)': (1, 159, 512, 512)} 
+after:  {'spacing': array([2.5       , 0.89550799, 0.89550799]), 'data.shape (data is resampled)': (1, 159, 476, 476)} 
+
+normalization...
+normalization done
+1 6761
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_plans_v2.1_2D_stage0/pn_129.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([2.5      , 0.9765625, 0.9765625]), 'spacing_transposed': array([2.5      , 0.9765625, 0.9765625]), 'data.shape (data is transposed)': (1, 193, 512, 512)} 
+after:  {'spacing': array([2.5       , 0.89550799, 0.89550799]), 'data.shape (data is resampled)': (1, 193, 558, 558)} 
+
+normalization...
+normalization done
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_plans_v2.1_2D_stage0/pn_134.npz
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([2.4000001 , 0.73199999, 0.73199999]), 'spacing_transposed': array([2.4000001 , 0.73199999, 0.73199999]), 'data.shape (data is transposed)': (1, 196, 512, 512)} 
+after:  {'spacing': array([2.4000001 , 0.89550799, 0.89550799]), 'data.shape (data is resampled)': (1, 196, 419, 419)} 
+
+normalization...
+normalization done
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_plans_v2.1_2D_stage0/pn_135.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([2.        , 0.68164062, 0.68164062]), 'spacing_transposed': array([2.        , 0.68164062, 0.68164062]), 'data.shape (data is transposed)': (1, 217, 512, 512)} 
+after:  {'spacing': array([2.        , 0.89550799, 0.89550799]), 'data.shape (data is resampled)': (1, 217, 390, 390)} 
+
+normalization...
+normalization done
+1 54
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_plans_v2.1_2D_stage0/pn_136.npz
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([2.76992869, 0.75390601, 0.75390601]), 'spacing_transposed': array([2.76992869, 0.75390601, 0.75390601]), 'data.shape (data is transposed)': (1, 156, 512, 512)} 
+after:  {'spacing': array([2.76992869, 0.89550799, 0.89550799]), 'data.shape (data is resampled)': (1, 156, 431, 431)} 
+
+normalization...
+normalization done
+1 3618
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_plans_v2.1_2D_stage0/pn_137.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.31107128, 0.94970697, 0.94970697]), 'spacing_transposed': array([1.31107128, 0.94970697, 0.94970697]), 'data.shape (data is transposed)': (1, 407, 512, 512)} 
+after:  {'spacing': array([1.31107128, 0.89550799, 0.89550799]), 'data.shape (data is resampled)': (1, 407, 543, 543)} 
+
+normalization...
+normalization done
+1 6288
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_plans_v2.1_2D_stage0/pn_033.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.38339221, 0.93164098, 0.93164098]), 'spacing_transposed': array([1.38339221, 0.93164098, 0.93164098]), 'data.shape (data is transposed)': (1, 378, 512, 512)} 
+after:  {'spacing': array([1.38339221, 0.89550799, 0.89550799]), 'data.shape (data is resampled)': (1, 378, 533, 533)} 
+
+normalization...
+normalization done
+1 4523
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_plans_v2.1_2D_stage0/pn_034.npz
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([2.74177647, 0.98754901, 0.98754901]), 'spacing_transposed': array([2.74177647, 0.98754901, 0.98754901]), 'data.shape (data is transposed)': (1, 204, 512, 512)} 
+after:  {'spacing': array([2.74177647, 0.89550799, 0.89550799]), 'data.shape (data is resampled)': (1, 204, 565, 565)} 
+
+normalization...
+normalization done
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_plans_v2.1_2D_stage0/pn_035.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([2.68548846, 0.97778302, 0.97778302]), 'spacing_transposed': array([2.68548846, 0.97778302, 0.97778302]), 'data.shape (data is transposed)': (1, 202, 512, 512)} 
+after:  {'spacing': array([2.68548846, 0.89550799, 0.89550799]), 'data.shape (data is resampled)': (1, 202, 559, 559)} 
+
+normalization...
+normalization done
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_plans_v2.1_2D_stage0/pn_036.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.32516229, 1.015625  , 1.015625  ]), 'spacing_transposed': array([1.32516229, 1.015625  , 1.015625  ]), 'data.shape (data is transposed)': (1, 435, 512, 512)} 
+after:  {'spacing': array([1.32516229, 0.89550799, 0.89550799]), 'data.shape (data is resampled)': (1, 435, 581, 581)} 
+
+normalization...
+normalization done
+1 185
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_plans_v2.1_2D_stage0/pn_047.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.31165445, 0.87890601, 0.87890601]), 'spacing_transposed': array([1.31165445, 0.87890601, 0.87890601]), 'data.shape (data is transposed)': (1, 376, 512, 512)} 
+after:  {'spacing': array([1.31165445, 0.89550799, 0.89550799]), 'data.shape (data is resampled)': (1, 376, 503, 503)} 
+
+normalization...
+normalization done
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_plans_v2.1_2D_stage0/pn_048.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.3221122 , 1.04614305, 1.04614305]), 'spacing_transposed': array([1.3221122 , 1.04614305, 1.04614305]), 'data.shape (data is transposed)': (1, 448, 512, 512)} 
+after:  {'spacing': array([1.3221122 , 0.89550799, 0.89550799]), 'data.shape (data is resampled)': (1, 448, 598, 598)} 
+
+normalization...
+normalization done
+1 4913
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_plans_v2.1_2D_stage0/pn_049.npz
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([2.74187255, 0.91552699, 0.91552699]), 'spacing_transposed': array([2.74187255, 0.91552699, 0.91552699]), 'data.shape (data is transposed)': (1, 189, 512, 512)} 
+after:  {'spacing': array([2.74187255, 0.89550799, 0.89550799]), 'data.shape (data is resampled)': (1, 189, 523, 523)} 
+
+normalization...
+normalization done
+1 1787
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_plans_v2.1_2D_stage0/pn_052.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.32323408, 0.80859399, 0.80859399]), 'spacing_transposed': array([1.32323408, 0.80859399, 0.80859399]), 'data.shape (data is transposed)': (1, 369, 512, 512)} 
+after:  {'spacing': array([1.32323408, 0.89550799, 0.89550799]), 'data.shape (data is resampled)': (1, 369, 462, 462)} 
+
+normalization...
+normalization done
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_plans_v2.1_2D_stage0/pn_100.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.31408679, 0.78515601, 0.78515601]), 'spacing_transposed': array([1.31408679, 0.78515601, 0.78515601]), 'data.shape (data is transposed)': (1, 373, 512, 512)} 
+after:  {'spacing': array([1.31408679, 0.89550799, 0.89550799]), 'data.shape (data is resampled)': (1, 373, 449, 449)} 
+
+normalization...
+normalization done
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_plans_v2.1_2D_stage0/pn_101.npz
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([2.70734286, 0.87646502, 0.87646502]), 'spacing_transposed': array([2.70734286, 0.87646502, 0.87646502]), 'data.shape (data is transposed)': (1, 181, 512, 512)} 
+after:  {'spacing': array([2.70734286, 0.89550799, 0.89550799]), 'data.shape (data is resampled)': (1, 181, 501, 501)} 
+
+normalization...
+normalization done
+1 1621
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_plans_v2.1_2D_stage0/pn_102.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.30325401, 1.015625  , 1.015625  ]), 'spacing_transposed': array([1.30325401, 1.015625  , 1.015625  ]), 'data.shape (data is transposed)': (1, 435, 512, 512)} 
+after:  {'spacing': array([1.30325401, 0.89550799, 0.89550799]), 'data.shape (data is resampled)': (1, 435, 581, 581)} 
+
+normalization...
+normalization done
+1 1905
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_plans_v2.1_2D_stage0/pn_103.npz
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([2.77460408, 0.98632801, 0.98632801]), 'spacing_transposed': array([2.77460408, 0.98632801, 0.98632801]), 'data.shape (data is transposed)': (1, 204, 512, 512)} 
+after:  {'spacing': array([2.77460408, 0.89550799, 0.89550799]), 'data.shape (data is resampled)': (1, 204, 564, 564)} 
+
+normalization...
+normalization done
+1 44
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_plans_v2.1_2D_stage0/pn_007.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.30351853, 0.92529303, 0.92529303]), 'spacing_transposed': array([1.30351853, 0.92529303, 0.92529303]), 'data.shape (data is transposed)': (1, 396, 512, 512)} 
+after:  {'spacing': array([1.30351853, 0.89550799, 0.89550799]), 'data.shape (data is resampled)': (1, 396, 529, 529)} 
+
+normalization...
+normalization done
+1 3258
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_plans_v2.1_2D_stage0/pn_010.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.37537074, 0.89843798, 0.89843798]), 'spacing_transposed': array([1.37537074, 0.89843798, 0.89843798]), 'data.shape (data is transposed)': (1, 368, 512, 512)} 
+after:  {'spacing': array([1.37537074, 0.89550799, 0.89550799]), 'data.shape (data is resampled)': (1, 368, 514, 514)} 
+
+normalization...
+normalization done
+1 212
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_plans_v2.1_2D_stage0/pn_011.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.31290555, 0.94604498, 0.94604498]), 'spacing_transposed': array([1.31290555, 0.94604498, 0.94604498]), 'data.shape (data is transposed)': (1, 405, 512, 512)} 
+after:  {'spacing': array([1.31290555, 0.89550799, 0.89550799]), 'data.shape (data is resampled)': (1, 405, 541, 541)} 
+
+normalization...
+normalization done
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_plans_v2.1_2D_stage0/pn_012.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.31679523, 0.859375  , 0.859375  ]), 'spacing_transposed': array([1.31679523, 0.859375  , 0.859375  ]), 'data.shape (data is transposed)': (1, 403, 512, 512)} 
+after:  {'spacing': array([1.31679523, 0.89550799, 0.89550799]), 'data.shape (data is resampled)': (1, 403, 491, 491)} 
+
+normalization...
+normalization done
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_plans_v2.1_2D_stage0/pn_059.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.33488083, 0.9375    , 0.9375    ]), 'spacing_transposed': array([1.33488083, 0.9375    , 0.9375    ]), 'data.shape (data is transposed)': (1, 408, 512, 512)} 
+after:  {'spacing': array([1.33488083, 0.89550799, 0.89550799]), 'data.shape (data is resampled)': (1, 408, 536, 536)} 
+
+normalization...
+normalization done
+1 667
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_plans_v2.1_2D_stage0/pn_060.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.30296433, 0.938721  , 0.938721  ]), 'spacing_transposed': array([1.30296433, 0.938721  , 0.938721  ]), 'data.shape (data is transposed)': (1, 402, 512, 512)} 
+after:  {'spacing': array([1.30296433, 0.89550799, 0.89550799]), 'data.shape (data is resampled)': (1, 402, 537, 537)} 
+
+normalization...
+normalization done
+1 844
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_plans_v2.1_2D_stage0/pn_061.npz
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([2.77814651, 0.90625   , 0.90625   ]), 'spacing_transposed': array([2.77814651, 0.90625   , 0.90625   ]), 'data.shape (data is transposed)': (1, 189, 512, 512)} 
+after:  {'spacing': array([2.77814651, 0.89550799, 0.89550799]), 'data.shape (data is resampled)': (1, 189, 518, 518)} 
+
+normalization...
+normalization done
+1 3956
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_plans_v2.1_2D_stage0/pn_062.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.33347833, 0.96435499, 0.96435499]), 'spacing_transposed': array([1.33347833, 0.96435499, 0.96435499]), 'data.shape (data is transposed)': (1, 413, 512, 512)} 
+after:  {'spacing': array([1.33347833, 0.89550799, 0.89550799]), 'data.shape (data is resampled)': (1, 413, 551, 551)} 
+
+normalization...
+normalization done
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_plans_v2.1_2D_stage0/pn_088.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.3316102, 0.906982 , 0.906982 ]), 'spacing_transposed': array([1.3316102, 0.906982 , 0.906982 ]), 'data.shape (data is transposed)': (1, 388, 512, 512)} 
+after:  {'spacing': array([1.3316102 , 0.89550799, 0.89550799]), 'data.shape (data is resampled)': (1, 388, 519, 519)} 
+
+normalization...
+normalization done
+1 9302
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_plans_v2.1_2D_stage0/pn_089.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.31481576, 0.89843798, 0.89843798]), 'spacing_transposed': array([1.31481576, 0.89843798, 0.89843798]), 'data.shape (data is transposed)': (1, 385, 512, 512)} 
+after:  {'spacing': array([1.31481576, 0.89550799, 0.89550799]), 'data.shape (data is resampled)': (1, 385, 514, 514)} 
+
+normalization...
+normalization done
+1 10000
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_plans_v2.1_2D_stage0/pn_090.npz
+no separate z, order 3
+no separate z, order 1
+before: {'spacing': array([1.33138001, 0.88867199, 0.88867199]), 'spacing_transposed': array([1.33138001, 0.88867199, 0.88867199]), 'data.shape (data is transposed)': (1, 381, 512, 512)} 
+after:  {'spacing': array([1.33138001, 0.89550799, 0.89550799]), 'data.shape (data is resampled)': (1, 381, 508, 508)} 
+
+normalization...
+normalization done
+1 417
+saving:  /home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task606_PNET_transfer/nnUNetData_plans_v2.1_2D_stage0/pn_091.npz
