@@ -2,7 +2,8 @@
 Finalizing PNET transfer learning + bootstrapping experiments.
 
 ## Overview
-- Run finetuning on pretrained PNET dataset
+- Run finetuning on pretrained PNET model on TACE dataset
+- Training another U-Net on predicted PNET segmentations
 
 ## Experiment 1: PNET Transfer learning
 Task 606: Model using TACE plans, trained on PNET dataset
@@ -24,9 +25,11 @@ Initial loss curve on PNET (140 epochs) (replace this once training finishes)
 ![Initial loss curve](experiment1/progress.png)
 
 ## Experiment 2: PNET bootstrapping
-Context: Initial PNET
+**Context:** Initial PNET segmentations miss the largest lesion segmented by radiologist. Want to make it more sensitive to all lesions so it overlaps more frequently.
+
 Task 602: U-Net trained directly on PNET dataset
 - 60-20-20 train-test-val split
+
 Task 610: U-Net trained on Task 602 predictions
 
 ### Procedure
