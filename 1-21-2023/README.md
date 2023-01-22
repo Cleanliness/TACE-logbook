@@ -15,6 +15,7 @@ Task 606: Model using TACE plans, trained on PNET dataset
 - Train U-Net using plans from TACE dataset (done) `nnUNet_train 3d_fullres nnUNetTrainerV2 <pnet_taskname> all -p <pretrained_plan_name>`
   - Single-fold cross validation
   - DICE+CE loss
+  - jobid `57082877`
 - Fine tune model on TACE dataset `nnUNet_train 3d_fullres nnUNetTrainerV2 <pnet_taskname> -pretrained_weights PATH_TO_MODEL_FINAL_CHECKPOINT`
   - 5-fold cross validation
   - DICE+CE loss
