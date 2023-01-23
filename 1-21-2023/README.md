@@ -39,3 +39,5 @@ Task 610: U-Net trained on Task 602 predictions
   - jobid `57142719`
 - Keep test set+ground truth the same for bootstrapped dataset
 - Train U-Net on predicted segmentations
+  - 5 fold cross validation
+  - fold jobids: `57156577, 57156578, 57156583, 57156584, 57156585`
