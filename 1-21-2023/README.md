@@ -36,5 +36,6 @@ Task 610: U-Net trained on Task 602 predictions
 ### Procedure
 - Preprocess **validation** images+segmentations from each fold on PNET task 602 (raw predictions before postprocessing)
   - TODO: doublecheck for data leakage?
+  - jobid `57142719`
 - Keep test set+ground truth the same for bootstrapped dataset
 - Train U-Net on predicted segmentations
