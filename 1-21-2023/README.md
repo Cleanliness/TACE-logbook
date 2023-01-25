@@ -22,9 +22,14 @@ Task 606: Model using TACE plans, trained on PNET dataset
 
 
 ### Results
-Initial loss curve on PNET (140 epochs) (replace this once training finishes)
-![Initial loss curve](experiment1/progress.png)
+DICE+CE loss curve on PNET. Less noisy compared to training directly on PNET?  
+![Initial loss curve](experiment1/PNET/progress.png)
 
+|        Dataset       | DICE |  FPR  | FNR | Hausdorff | 
+| -------------------- | ---- | ----- | --- | --------- |
+| Val                  | 0.50 | 8.6e-4| 0.36| TODO      |
+| Test                 | TODO | TODO  | TODO| TODO      |
+| Test (no TACE plans) | 0.52 | 8.5e-4| 0.39| 4.55      |
 ## Experiment 2: PNET bootstrapping
 **Context:** Initial PNET segmentations miss the largest lesion segmented by radiologist. Want to make it more sensitive to all lesions so it overlaps more frequently.
 
