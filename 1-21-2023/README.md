@@ -11,7 +11,7 @@ Task 606: Model using TACE plans, trained on PNET dataset
 
 ### Procedure
 - Preprocess TACE dataset (done) `nnUNet_plan_and_preprocess -t <tacenum>`
-- [Preprocess](experiment1/pn_transfer_preprocess.sh) PNET dataset using plans from TACE (done) `nnUNet_plan_and_preprocess -t <pnetnum> -overwrite_plans <tace_plans> -overwrite_plans_identifier <tacenum>`
+- [Preprocess](experiment1/PNET/pn_transfer_preprocess.sh) PNET dataset using plans from TACE (done) `nnUNet_plan_and_preprocess -t <pnetnum> -overwrite_plans <tace_plans> -overwrite_plans_identifier <tacenum>`
 - Train U-Net using plans from TACE dataset (done) `nnUNet_train 3d_fullres nnUNetTrainerV2 <pnet_taskname> all -p <pretrained_plan_name>`
   - Single-fold cross validation
   - DICE+CE loss
