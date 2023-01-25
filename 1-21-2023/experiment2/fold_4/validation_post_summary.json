@@ -1,0 +1,466 @@
+{
+    "author": "Fabian",
+    "description": "",
+    "id": "13fa94e6bbb9",
+    "name": "",
+    "results": {
+        "all": [
+            {
+                "1": {
+                    "Accuracy": 0.9994240723572694,
+                    "Dice": 0.0,
+                    "False Discovery Rate": 1.0,
+                    "False Negative Rate": 1.0,
+                    "False Omission Rate": 0.0005759047448305409,
+                    "False Positive Rate": 2.2924296905202368e-08,
+                    "Jaccard": 0.0,
+                    "Negative Predictive Value": 0.9994240952551695,
+                    "Precision": 0.0,
+                    "Recall": 0.0,
+                    "Total Positives Reference": 50273,
+                    "Total Positives Test": 2,
+                    "True Negative Rate": 0.9999999770757031
+                },
+                "reference": "/home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task610_PNET_bootstrap/gt_segmentations/pn_002.nii.gz",
+                "test": "/home/royga/projects/def-amartel/royga/nn_unet_test/results/nnUNet/3d_fullres/Task610_PNET_bootstrap/nnUNetTrainerV2__nnUNetPlansv2.1/fold_4/validation_raw_postprocessed/pn_002.nii.gz"
+            },
+            {
+                "1": {
+                    "Accuracy": 0.9997801604094328,
+                    "Dice": 0.8529745256633154,
+                    "False Discovery Rate": 0.24077375946173252,
+                    "False Negative Rate": 0.026863869604587975,
+                    "False Omission Rate": 1.7618920288243272e-05,
+                    "False Positive Rate": 0.00020236808263152106,
+                    "Jaccard": 0.7436404375906155,
+                    "Negative Predictive Value": 0.9999823810797117,
+                    "Precision": 0.7592262405382675,
+                    "Recall": 0.973136130395412,
+                    "Total Positives Reference": 69573,
+                    "Total Positives Test": 89175,
+                    "True Negative Rate": 0.9997976319173685
+                },
+                "reference": "/home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task610_PNET_bootstrap/gt_segmentations/pn_012.nii.gz",
+                "test": "/home/royga/projects/def-amartel/royga/nn_unet_test/results/nnUNet/3d_fullres/Task610_PNET_bootstrap/nnUNetTrainerV2__nnUNetPlansv2.1/fold_4/validation_raw_postprocessed/pn_012.nii.gz"
+            },
+            {
+                "1": {
+                    "Accuracy": 0.9995223295341418,
+                    "Dice": 0.6430696425853408,
+                    "False Discovery Rate": 0.5093435249899703,
+                    "False Negative Rate": 0.06716178241670012,
+                    "False Omission Rate": 3.100772032926752e-05,
+                    "False Positive Rate": 0.0004468960841921277,
+                    "Jaccard": 0.4739149942894436,
+                    "Negative Predictive Value": 0.9999689922796707,
+                    "Precision": 0.4906564750100298,
+                    "Recall": 0.9328382175832999,
+                    "Total Positives Reference": 49820,
+                    "Total Positives Test": 94718,
+                    "True Negative Rate": 0.9995531039158079
+                },
+                "reference": "/home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task610_PNET_bootstrap/gt_segmentations/pn_016.nii.gz",
+                "test": "/home/royga/projects/def-amartel/royga/nn_unet_test/results/nnUNet/3d_fullres/Task610_PNET_bootstrap/nnUNetTrainerV2__nnUNetPlansv2.1/fold_4/validation_raw_postprocessed/pn_016.nii.gz"
+            },
+            {
+                "1": {
+                    "Accuracy": 0.999989998772972,
+                    "Dice": 0.0,
+                    "False Discovery Rate": NaN,
+                    "False Negative Rate": 1.0,
+                    "False Omission Rate": 1.0001227028011658e-05,
+                    "False Positive Rate": 0.0,
+                    "Jaccard": 0.0,
+                    "Negative Predictive Value": 0.999989998772972,
+                    "Precision": NaN,
+                    "Recall": 0.0,
+                    "Total Positives Reference": 506,
+                    "Total Positives Test": 0,
+                    "True Negative Rate": 1.0
+                },
+                "reference": "/home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task610_PNET_bootstrap/gt_segmentations/pn_017.nii.gz",
+                "test": "/home/royga/projects/def-amartel/royga/nn_unet_test/results/nnUNet/3d_fullres/Task610_PNET_bootstrap/nnUNetTrainerV2__nnUNetPlansv2.1/fold_4/validation_raw_postprocessed/pn_017.nii.gz"
+            },
+            {
+                "1": {
+                    "Accuracy": 0.999944895581738,
+                    "Dice": 0.0,
+                    "False Discovery Rate": 1.0,
+                    "False Negative Rate": 1.0,
+                    "False Omission Rate": 2.8800265952546907e-05,
+                    "False Positive Rate": 2.6305667488069062e-05,
+                    "Jaccard": 0.0,
+                    "Negative Predictive Value": 0.9999711997340475,
+                    "Precision": 0.0,
+                    "Recall": 0.0,
+                    "Total Positives Reference": 2967,
+                    "Total Positives Test": 2710,
+                    "True Negative Rate": 0.9999736943325119
+                },
+                "reference": "/home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task610_PNET_bootstrap/gt_segmentations/pn_021.nii.gz",
+                "test": "/home/royga/projects/def-amartel/royga/nn_unet_test/results/nnUNet/3d_fullres/Task610_PNET_bootstrap/nnUNetTrainerV2__nnUNetPlansv2.1/fold_4/validation_raw_postprocessed/pn_021.nii.gz"
+            },
+            {
+                "1": {
+                    "Accuracy": 0.9999923189391401,
+                    "Dice": 0.7813725490196078,
+                    "False Discovery Rate": 0.2984154929577465,
+                    "False Negative Rate": 0.11836283185840712,
+                    "False Omission Rate": 1.8428017751520053e-06,
+                    "False Positive Rate": 5.838386034517917e-06,
+                    "Jaccard": 0.6411906677393403,
+                    "Negative Predictive Value": 0.9999981571982248,
+                    "Precision": 0.7015845070422535,
+                    "Recall": 0.8816371681415929,
+                    "Total Positives Reference": 1808,
+                    "Total Positives Test": 2272,
+                    "True Negative Rate": 0.9999941616139655
+                },
+                "reference": "/home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task610_PNET_bootstrap/gt_segmentations/pn_038.nii.gz",
+                "test": "/home/royga/projects/def-amartel/royga/nn_unet_test/results/nnUNet/3d_fullres/Task610_PNET_bootstrap/nnUNetTrainerV2__nnUNetPlansv2.1/fold_4/validation_raw_postprocessed/pn_038.nii.gz"
+            },
+            {
+                "1": {
+                    "Accuracy": 0.9915778393648109,
+                    "Dice": 0.6445966861355893,
+                    "False Discovery Rate": 0.04567766881683821,
+                    "False Negative Rate": 0.5133467844945397,
+                    "False Omission Rate": 0.008121590888456716,
+                    "False Positive Rate": 0.00037139747122272304,
+                    "Jaccard": 0.4755755571363995,
+                    "Negative Predictive Value": 0.9918784091115432,
+                    "Precision": 0.9543223311831618,
+                    "Recall": 0.48665321550546026,
+                    "Total Positives Reference": 1612748,
+                    "Total Positives Test": 822415,
+                    "True Negative Rate": 0.9996286025287773
+                },
+                "reference": "/home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task610_PNET_bootstrap/gt_segmentations/pn_045.nii.gz",
+                "test": "/home/royga/projects/def-amartel/royga/nn_unet_test/results/nnUNet/3d_fullres/Task610_PNET_bootstrap/nnUNetTrainerV2__nnUNetPlansv2.1/fold_4/validation_raw_postprocessed/pn_045.nii.gz"
+            },
+            {
+                "1": {
+                    "Accuracy": 0.9999985968929598,
+                    "Dice": 0.0,
+                    "False Discovery Rate": 1.0,
+                    "False Negative Rate": 1.0,
+                    "False Omission Rate": 1.3066435572576336e-06,
+                    "False Positive Rate": 9.646373511085216e-08,
+                    "Jaccard": 0.0,
+                    "Negative Predictive Value": 0.9999986933564428,
+                    "Precision": 0.0,
+                    "Recall": 0.0,
+                    "Total Positives Reference": 149,
+                    "Total Positives Test": 11,
+                    "True Negative Rate": 0.9999999035362649
+                },
+                "reference": "/home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task610_PNET_bootstrap/gt_segmentations/pn_047.nii.gz",
+                "test": "/home/royga/projects/def-amartel/royga/nn_unet_test/results/nnUNet/3d_fullres/Task610_PNET_bootstrap/nnUNetTrainerV2__nnUNetPlansv2.1/fold_4/validation_raw_postprocessed/pn_047.nii.gz"
+            },
+            {
+                "1": {
+                    "Accuracy": 0.9999903099877494,
+                    "Dice": 0.8379379094275136,
+                    "False Discovery Rate": 0.1377491207502931,
+                    "False Negative Rate": 0.18504155124653743,
+                    "False Omission Rate": 5.688151359323417e-06,
+                    "False Positive Rate": 4.00214917117836e-06,
+                    "Jaccard": 0.721078431372549,
+                    "Negative Predictive Value": 0.9999943118486406,
+                    "Precision": 0.8622508792497069,
+                    "Recall": 0.8149584487534626,
+                    "Total Positives Reference": 3610,
+                    "Total Positives Test": 3412,
+                    "True Negative Rate": 0.9999959978508288
+                },
+                "reference": "/home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task610_PNET_bootstrap/gt_segmentations/pn_049.nii.gz",
+                "test": "/home/royga/projects/def-amartel/royga/nn_unet_test/results/nnUNet/3d_fullres/Task610_PNET_bootstrap/nnUNetTrainerV2__nnUNetPlansv2.1/fold_4/validation_raw_postprocessed/pn_049.nii.gz"
+            },
+            {
+                "1": {
+                    "Accuracy": 0.9994598576419839,
+                    "Dice": 0.5260051972950102,
+                    "False Discovery Rate": 0.6408365718960933,
+                    "False Negative Rate": 0.017677827193644968,
+                    "False Omission Rate": 5.397991339093719e-06,
+                    "False Positive Rate": 0.0005349120721794831,
+                    "Jaccard": 0.35685688737145876,
+                    "Negative Predictive Value": 0.9999946020086609,
+                    "Precision": 0.3591634281039067,
+                    "Recall": 0.982322172806355,
+                    "Total Positives Reference": 35751,
+                    "Total Positives Test": 97780,
+                    "True Negative Rate": 0.9994650879278205
+                },
+                "reference": "/home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task610_PNET_bootstrap/gt_segmentations/pn_056.nii.gz",
+                "test": "/home/royga/projects/def-amartel/royga/nn_unet_test/results/nnUNet/3d_fullres/Task610_PNET_bootstrap/nnUNetTrainerV2__nnUNetPlansv2.1/fold_4/validation_raw_postprocessed/pn_056.nii.gz"
+            },
+            {
+                "1": {
+                    "Accuracy": 0.9990553168658407,
+                    "Dice": 3.58130914755889e-05,
+                    "False Discovery Rate": 0.9999767249706153,
+                    "False Negative Rate": 0.9999223662759102,
+                    "False Omission Rate": 0.00021804451231437278,
+                    "False Positive Rate": 0.0007269555054026933,
+                    "Jaccard": 1.7906866387916448e-05,
+                    "Negative Predictive Value": 0.9997819554876857,
+                    "Precision": 2.3275029384724597e-05,
+                    "Recall": 7.763372408974459e-05,
+                    "Total Positives Reference": 25762,
+                    "Total Positives Test": 85929,
+                    "True Negative Rate": 0.9992730444945973
+                },
+                "reference": "/home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task610_PNET_bootstrap/gt_segmentations/pn_058.nii.gz",
+                "test": "/home/royga/projects/def-amartel/royga/nn_unet_test/results/nnUNet/3d_fullres/Task610_PNET_bootstrap/nnUNetTrainerV2__nnUNetPlansv2.1/fold_4/validation_raw_postprocessed/pn_058.nii.gz"
+            },
+            {
+                "1": {
+                    "Accuracy": 0.9999138750928513,
+                    "Dice": 0.8217907001154613,
+                    "False Discovery Rate": 0.06483516483516483,
+                    "False Negative Rate": 0.2670660924920427,
+                    "False Omission Rate": 7.237287038617624e-05,
+                    "False Positive Rate": 1.3771135839335535e-05,
+                    "Jaccard": 0.697491269332193,
+                    "Negative Predictive Value": 0.9999276271296138,
+                    "Precision": 0.9351648351648352,
+                    "Recall": 0.7329339075079573,
+                    "Total Positives Reference": 26705,
+                    "Total Positives Test": 20930,
+                    "True Negative Rate": 0.9999862288641607
+                },
+                "reference": "/home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task610_PNET_bootstrap/gt_segmentations/pn_078.nii.gz",
+                "test": "/home/royga/projects/def-amartel/royga/nn_unet_test/results/nnUNet/3d_fullres/Task610_PNET_bootstrap/nnUNetTrainerV2__nnUNetPlansv2.1/fold_4/validation_raw_postprocessed/pn_078.nii.gz"
+            },
+            {
+                "1": {
+                    "Accuracy": 0.9999886048145783,
+                    "Dice": 0.0,
+                    "False Discovery Rate": NaN,
+                    "False Negative Rate": 1.0,
+                    "False Omission Rate": 1.139518542167468e-05,
+                    "False Positive Rate": 0.0,
+                    "Jaccard": 0.0,
+                    "Negative Predictive Value": 0.9999886048145783,
+                    "Precision": NaN,
+                    "Recall": 0.0,
+                    "Total Positives Reference": 1165,
+                    "Total Positives Test": 0,
+                    "True Negative Rate": 1.0
+                },
+                "reference": "/home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task610_PNET_bootstrap/gt_segmentations/pn_097.nii.gz",
+                "test": "/home/royga/projects/def-amartel/royga/nn_unet_test/results/nnUNet/3d_fullres/Task610_PNET_bootstrap/nnUNetTrainerV2__nnUNetPlansv2.1/fold_4/validation_raw_postprocessed/pn_097.nii.gz"
+            },
+            {
+                "1": {
+                    "Accuracy": 0.9996788495347583,
+                    "Dice": 0.0,
+                    "False Discovery Rate": NaN,
+                    "False Negative Rate": 1.0,
+                    "False Omission Rate": 0.00032115046524170576,
+                    "False Positive Rate": 0.0,
+                    "Jaccard": 0.0,
+                    "Negative Predictive Value": 0.9996788495347583,
+                    "Precision": NaN,
+                    "Recall": 0.0,
+                    "Total Positives Reference": 31402,
+                    "Total Positives Test": 0,
+                    "True Negative Rate": 1.0
+                },
+                "reference": "/home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task610_PNET_bootstrap/gt_segmentations/pn_101.nii.gz",
+                "test": "/home/royga/projects/def-amartel/royga/nn_unet_test/results/nnUNet/3d_fullres/Task610_PNET_bootstrap/nnUNetTrainerV2__nnUNetPlansv2.1/fold_4/validation_raw_postprocessed/pn_101.nii.gz"
+            },
+            {
+                "1": {
+                    "Accuracy": 0.9998409345209434,
+                    "Dice": 0.960090990315046,
+                    "False Discovery Rate": 0.0606810470943443,
+                    "False Negative Rate": 0.018197493777823537,
+                    "False Omission Rate": 3.553533011252226e-05,
+                    "False Positive Rate": 0.00012384387633423977,
+                    "Jaccard": 0.9232451891208354,
+                    "Negative Predictive Value": 0.9999644646698875,
+                    "Precision": 0.9393189529056557,
+                    "Recall": 0.9818025062221765,
+                    "Total Positives Reference": 184421,
+                    "Total Positives Test": 192762,
+                    "True Negative Rate": 0.9998761561236658
+                },
+                "reference": "/home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task610_PNET_bootstrap/gt_segmentations/pn_104.nii.gz",
+                "test": "/home/royga/projects/def-amartel/royga/nn_unet_test/results/nnUNet/3d_fullres/Task610_PNET_bootstrap/nnUNetTrainerV2__nnUNetPlansv2.1/fold_4/validation_raw_postprocessed/pn_104.nii.gz"
+            },
+            {
+                "1": {
+                    "Accuracy": 0.9997394632848894,
+                    "Dice": 0.8902901384842559,
+                    "False Discovery Rate": 0.03382563125297766,
+                    "False Negative Rate": 0.17454209065679926,
+                    "False Omission Rate": 0.00022377187925161232,
+                    "False Positive Rate": 3.705712875956557e-05,
+                    "Jaccard": 0.8022728907430051,
+                    "Negative Predictive Value": 0.9997762281207484,
+                    "Precision": 0.9661743687470223,
+                    "Recall": 0.8254579093432007,
+                    "Total Positives Reference": 54050,
+                    "Total Positives Test": 46178,
+                    "True Negative Rate": 0.9999629428712404
+                },
+                "reference": "/home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task610_PNET_bootstrap/gt_segmentations/pn_105.nii.gz",
+                "test": "/home/royga/projects/def-amartel/royga/nn_unet_test/results/nnUNet/3d_fullres/Task610_PNET_bootstrap/nnUNetTrainerV2__nnUNetPlansv2.1/fold_4/validation_raw_postprocessed/pn_105.nii.gz"
+            },
+            {
+                "1": {
+                    "Accuracy": 0.9999334745317976,
+                    "Dice": 0.0,
+                    "False Discovery Rate": NaN,
+                    "False Negative Rate": 1.0,
+                    "False Omission Rate": 6.652546820239485e-05,
+                    "False Positive Rate": 0.0,
+                    "Jaccard": 0.0,
+                    "Negative Predictive Value": 0.9999334745317976,
+                    "Precision": NaN,
+                    "Recall": 0.0,
+                    "Total Positives Reference": 1866,
+                    "Total Positives Test": 0,
+                    "True Negative Rate": 1.0
+                },
+                "reference": "/home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task610_PNET_bootstrap/gt_segmentations/pn_107.nii.gz",
+                "test": "/home/royga/projects/def-amartel/royga/nn_unet_test/results/nnUNet/3d_fullres/Task610_PNET_bootstrap/nnUNetTrainerV2__nnUNetPlansv2.1/fold_4/validation_raw_postprocessed/pn_107.nii.gz"
+            },
+            {
+                "1": {
+                    "Accuracy": 0.9994734160754145,
+                    "Dice": 0.0,
+                    "False Discovery Rate": 1.0,
+                    "False Negative Rate": 1.0,
+                    "False Omission Rate": 0.00027988489619272246,
+                    "False Positive Rate": 0.00024683716400120126,
+                    "Jaccard": 0.0,
+                    "Negative Predictive Value": 0.9997201151038073,
+                    "Precision": 0.0,
+                    "Recall": 0.0,
+                    "Total Positives Reference": 14377,
+                    "Total Positives Test": 12679,
+                    "True Negative Rate": 0.9997531628359988
+                },
+                "reference": "/home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task610_PNET_bootstrap/gt_segmentations/pn_117.nii.gz",
+                "test": "/home/royga/projects/def-amartel/royga/nn_unet_test/results/nnUNet/3d_fullres/Task610_PNET_bootstrap/nnUNetTrainerV2__nnUNetPlansv2.1/fold_4/validation_raw_postprocessed/pn_117.nii.gz"
+            },
+            {
+                "1": {
+                    "Accuracy": 0.9999851781886429,
+                    "Dice": 0.0,
+                    "False Discovery Rate": 1.0,
+                    "False Negative Rate": 1.0,
+                    "False Omission Rate": 1.43375997613203e-05,
+                    "False Positive Rate": 4.842254809345192e-07,
+                    "Jaccard": 0.0,
+                    "Negative Predictive Value": 0.9999856624002387,
+                    "Precision": 0.0,
+                    "Recall": 0.0,
+                    "Total Positives Reference": 1214,
+                    "Total Positives Test": 41,
+                    "True Negative Rate": 0.9999995157745191
+                },
+                "reference": "/home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task610_PNET_bootstrap/gt_segmentations/pn_124.nii.gz",
+                "test": "/home/royga/projects/def-amartel/royga/nn_unet_test/results/nnUNet/3d_fullres/Task610_PNET_bootstrap/nnUNetTrainerV2__nnUNetPlansv2.1/fold_4/validation_raw_postprocessed/pn_124.nii.gz"
+            },
+            {
+                "1": {
+                    "Accuracy": 0.9994007873535157,
+                    "Dice": 0.8968153870408324,
+                    "False Discovery Rate": 0.17909927244302803,
+                    "False Negative Rate": 0.011798427841394399,
+                    "False Omission Rate": 3.118871680243325e-05,
+                    "False Positive Rate": 0.0005696238673356113,
+                    "Jaccard": 0.8129331904251519,
+                    "Negative Predictive Value": 0.9999688112831976,
+                    "Precision": 0.820900727556972,
+                    "Recall": 0.9882015721586056,
+                    "Total Positives Reference": 69077,
+                    "Total Positives Test": 83155,
+                    "True Negative Rate": 0.9994303761326644
+                },
+                "reference": "/home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task610_PNET_bootstrap/gt_segmentations/pn_127.nii.gz",
+                "test": "/home/royga/projects/def-amartel/royga/nn_unet_test/results/nnUNet/3d_fullres/Task610_PNET_bootstrap/nnUNetTrainerV2__nnUNetPlansv2.1/fold_4/validation_raw_postprocessed/pn_127.nii.gz"
+            },
+            {
+                "1": {
+                    "Accuracy": 0.9999414496465561,
+                    "Dice": 0.0,
+                    "False Discovery Rate": NaN,
+                    "False Negative Rate": 1.0,
+                    "False Omission Rate": 5.855035344395069e-05,
+                    "False Positive Rate": 0.0,
+                    "Jaccard": 0.0,
+                    "Negative Predictive Value": 0.9999414496465561,
+                    "Precision": NaN,
+                    "Recall": 0.0,
+                    "Total Positives Reference": 1673,
+                    "Total Positives Test": 0,
+                    "True Negative Rate": 1.0
+                },
+                "reference": "/home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task610_PNET_bootstrap/gt_segmentations/pn_138.nii.gz",
+                "test": "/home/royga/projects/def-amartel/royga/nn_unet_test/results/nnUNet/3d_fullres/Task610_PNET_bootstrap/nnUNetTrainerV2__nnUNetPlansv2.1/fold_4/validation_raw_postprocessed/pn_138.nii.gz"
+            },
+            {
+                "1": {
+                    "Accuracy": 0.9996026026738154,
+                    "Dice": 0.9458860513986379,
+                    "False Discovery Rate": 0.0839469231221539,
+                    "False Negative Rate": 0.02227242932652751,
+                    "False Omission Rate": 7.941892400785088e-05,
+                    "False Positive Rate": 0.00031941416126624045,
+                    "Jaccard": 0.897328085501264,
+                    "Negative Predictive Value": 0.9999205810759921,
+                    "Precision": 0.9160530768778461,
+                    "Recall": 0.9777275706734725,
+                    "Total Positives Reference": 143406,
+                    "Total Positives Test": 153061,
+                    "True Negative Rate": 0.9996805858387338
+                },
+                "reference": "/home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task610_PNET_bootstrap/gt_segmentations/pn_139.nii.gz",
+                "test": "/home/royga/projects/def-amartel/royga/nn_unet_test/results/nnUNet/3d_fullres/Task610_PNET_bootstrap/nnUNetTrainerV2__nnUNetPlansv2.1/fold_4/validation_raw_postprocessed/pn_139.nii.gz"
+            },
+            {
+                "1": {
+                    "Accuracy": 0.9995319522612276,
+                    "Dice": 0.0,
+                    "False Discovery Rate": 1.0,
+                    "False Negative Rate": 1.0,
+                    "False Omission Rate": 0.00021530597189905624,
+                    "False Positive Rate": 0.0002528506218905102,
+                    "Jaccard": 0.0,
+                    "Negative Predictive Value": 0.999784694028101,
+                    "Precision": 0.0,
+                    "Recall": 0.0,
+                    "Total Positives Reference": 9649,
+                    "Total Positives Test": 11332,
+                    "True Negative Rate": 0.9997471493781095
+                },
+                "reference": "/home/royga/projects/def-amartel/royga/nn_unet_test/nnUNet_preprocessed/Task610_PNET_bootstrap/gt_segmentations/pn_140.nii.gz",
+                "test": "/home/royga/projects/def-amartel/royga/nn_unet_test/results/nnUNet/3d_fullres/Task610_PNET_bootstrap/nnUNetTrainerV2__nnUNetPlansv2.1/fold_4/validation_raw_postprocessed/pn_140.nii.gz"
+            }
+        ],
+        "mean": {
+            "1": {
+                "Accuracy": 0.9993811427968273,
+                "Dice": 0.3826463300248733,
+                "False Discovery Rate": 0.51639782792172,
+                "False Negative Rate": 0.5835762411819528,
+                "False Omission Rate": 0.0004533322403458237,
+                "False Positive Rate": 0.0001688120429244334,
+                "Jaccard": 0.3280671959777671,
+                "Negative Predictive Value": 0.9995466677596541,
+                "Precision": 0.48360217207828016,
+                "Recall": 0.4164237588180472,
+                "Total Positives Reference": 103998.78260869565,
+                "Total Positives Test": 74720.08695652174,
+                "True Negative Rate": 0.9998311879570757
+            }
+        }
+    },
+    "task": "",
+    "timestamp": "2023-01-24 18:38:46.481869"
+}
