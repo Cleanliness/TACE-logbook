@@ -30,6 +30,7 @@ DICE+CE loss curve on PNET. Less noisy compared to training directly on PNET?
 | Val                  | 0.50 | 8.6e-4| 0.36| TODO      |
 | Test                 | TODO | TODO  | TODO| TODO      |
 | Test (no TACE plans) | 0.52 | 8.5e-4| 0.39| 4.55      |
+- Nearly the same performance on PNET when using TACE plans
 ## Experiment 2: PNET bootstrapping
 **Context:** Initial PNET segmentations miss the largest lesion segmented by radiologist. Want to make it more sensitive to all lesions so it overlaps more frequently.
 
@@ -46,3 +47,24 @@ Task 610: U-Net trained on Task 602 predictions
 - Train U-Net on predicted segmentations
   - 5 fold cross validation
   - fold jobids: `57156577, 57156578, 57156583, 57156584, 57156585`
+
+### Results
+Training on PNET segmentations again:
+| Fold 0| Fold 1 | Fold 2| Fold 3 | Fold 4 |
+|-------|--------|-------|--------|--------|
+|![](experiment2/fold_0/progress.png)|![](experiment2/fold_1/progress.png)|![](experiment2/fold_2/progress.png)|![](experiment2/fold_3/progress.png)|![](experiment2/fold_4/progress.png)
+- roughly the same performance over each fold for evaluation metric
+
+Evaluation metric performance:
+|        Dataset       | DICE | FPR   | FNR | Hausdorff |
+| -------------------- | ---- | ----- | --- | --------- |
+| Fold 0               | 0.30 | 5.1e-4| 0.66| TODO      | 
+| Fold 1               | 0.44 | 3.5e-4| 0.55| TODO      | 
+| Fold 2               | 0.38 | 8.9e-4| 0.54| TODO      | 
+| Fold 3               | 0.31 | 1.9e-3| 0.50| TODO      | 
+| Fold 4               | 0.35 | 3.2e-4| 0.58| TODO      | 
+| Test                 | TODO | TODO  |TODO | TODO      |
+| Test (On PNET only)  | 0.52 | 8.5e-4| 0.39| 4.55      |
+- Note evaluation metrics are computed on predicted PNET segmentations
+- Might want to compute them over connected bodies overlapping w/ radiologist segmented tumor
+
