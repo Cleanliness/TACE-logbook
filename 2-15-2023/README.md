@@ -1,6 +1,6 @@
 # Feb 15 2023
 
-Running feature extraction on ground truth and predicted segmentations
+Running+analyzing feature extraction on ground truth and predicted segmentations
 - Code used to produce visualizations can be found in `viz.py`
 ## Overview
 - pyradiomics on ground truth and predicted segmentations
