@@ -5,6 +5,7 @@ Evaluating different feature selection algorithms
 ## Overview
 - Run lasso, ridge, and elastic net regression on training set segmentations
 - Analysis of selected features
+- Visualization and feature selection code can be found in [feature_selection.py](feature_selection.py)
 
 ## TODO
 - Run ridge, elastic net, PCA?
