@@ -13,9 +13,7 @@ Evaluating different feature selection algorithms
 ### Procedure
 
 We use lasso regression with the following objective function:
-$$
-\frac{1}{2N}\lVert \mathbf{Xw} - \mathbf{y} \rVert_2^2 + \alpha \lVert \mathbf{w} \rVert_1
-$$
+$$\frac{1}{2N}\lVert \mathbf{Xw} - \mathbf{y} \rVert_2^2 + \alpha \lVert \mathbf{w} \rVert_1$$
 - Apply 5-fold cross validation to training set
 - Standardize features
 - Perform grid search over $\alpha$ values
