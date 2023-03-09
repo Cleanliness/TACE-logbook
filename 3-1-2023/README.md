@@ -19,6 +19,7 @@ $$\frac{1}{2N}\lVert \mathbf{Xw} - \mathbf{y} \rVert_2^2 + \alpha \lVert \mathbf
 - Perform grid search over $\alpha$ values
 - Run for a maximum of 1000 iterations
 - Evaluate performance with MSE
+- Targets: overall survival in months
 
 ### Choosing initial range of $\alpha$
 - Vary $\alpha$ by orders of magnitude
