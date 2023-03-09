@@ -1,7 +1,7 @@
 # Feb 15 2023
 
-Running feature extraction on ground truth and predicted segmentations
-
+Running+analyzing feature extraction on ground truth and predicted segmentations
+- Code used to produce visualizations can be found in `viz.py`
 ## Overview
 - pyradiomics on ground truth and predicted segmentations
 - visualization and analysis of the distribution of each feature
@@ -35,9 +35,10 @@ Different distributions for gray level-related features:
 Histogram shows distribution of KL divergence (X axis) between ground truth and predicted features
 - Computed as $KL(GT || Pred)$
 - Note: $\infty$ is replaced with $-1$ in this histogram
+- Raw results can be found in `pyradiomics_raw/kl_div.json`
 ![](visualizations/KL_div.png)
 
-Cases which score $-\infty$:
+Cases which score $\infty$:
 - `diagnostics_Mask-original_VolumeNum
 original_shape_MajorAxisLength
 original_shape_Maximum2DDiameterSlice
