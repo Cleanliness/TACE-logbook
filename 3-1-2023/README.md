@@ -5,6 +5,7 @@ Evaluating different feature selection algorithms
 ## Overview
 - Run lasso, ridge, and elastic net regression on training set segmentations
 - Analysis of selected features
+- Visualization and feature selection code can be found in [feature_selection.py](feature_selection.py)
 
 ## TODO
 - Run ridge, elastic net, PCA?
@@ -13,14 +14,13 @@ Evaluating different feature selection algorithms
 ### Procedure
 
 We use lasso regression with the following objective function:
-$$
-\frac{1}{2N}\lVert \mathbf{Xw} - \mathbf{y} \rVert_2^2 + \alpha \lVert \mathbf{w} \rVert_1
-$$
+$$\frac{1}{2N}\lVert \mathbf{Xw} - \mathbf{y} \rVert_2^2 + \alpha \lVert \mathbf{w} \rVert_1$$
 - Apply 5-fold cross validation to training set
 - Standardize features
 - Perform grid search over $\alpha$ values
 - Run for a maximum of 1000 iterations
 - Evaluate performance with MSE
+- Targets: overall survival in months
 
 ### Choosing initial range of $\alpha$
 - Vary $\alpha$ by orders of magnitude
