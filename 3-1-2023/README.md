@@ -18,9 +18,9 @@ $$\frac{1}{2N}\lVert \mathbf{Xw} - \mathbf{y} \rVert_2^2 + \alpha \lVert \mathbf
 - Apply 5-fold cross validation to training set
 - Standardize features
 - Perform grid search over $\alpha$ values
-- Run for a maximum of 1000 iterations
+- Run for a maximum of 1000 iterations of **coordinate descent**
 - Evaluate performance with MSE
-- Targets: overall survival in months
+- **Targets:** overall survival in months
 
 ### Choosing initial range of $\alpha$
 - Vary $\alpha$ by orders of magnitude
@@ -72,7 +72,53 @@ This corresponds to the following 8 features:
 - `'original_glrlm_LowGrayLevelRunEmphasis'`
 - `'original_glszm_SmallA`
 
+On a different run, we get the same value for $\alpha$ and MSE, but with the following features:
+- `'original_shape_Flatness'`
+- `'original_shape_LeastAxisLength'`
+- `'original_shape_Maximum2DDiameterColumn'`
+- `'original_shape_Sphericity'`
+- `'original_shape_SurfaceArea'`
+- `'original_glrlm_GrayLevelNonUniformityNormalized'`
+- `'original_glrlm_RunEntropy'`
+- `'original_glszm_ZoneEntropy'`
+
+Some features are reused, roughly same classes of features (mostly shape and texture features)
+
+### Features at higher $\alpha$
+$\alpha=2.1$ (6 Features):
+- `'original_shape_LeastAxisLength' `
+- `'original_shape_Maximum2DDiameterColumn'`
+- `'original_shape_Sphericity' `
+- `'original_shape_SurfaceArea'`
+- `'original_glrlm_GrayLevelNonUniformityNormalized'`
+- `'original_glrlm_RunEntropy'`
+
+$\alpha=2.2$ (4 features):
+- `'original_shape_LeastAxisLength' `
+- `'original_shape_Maximum2DDiameterColumn'`
+- `'original_shape_SurfaceArea' `
+- `'original_glrlm_RunEntropy'`
+
+$\alpha \in [2.3, 2.9]$:
+- `'original_shape_LeastAxisLength'`
+
+No features selected after this point
+
+### Concordance Index
+Concordance index on each validation fold:
+- `0.525, 0.63865546, 0.55833333, 0.68067227, 0.50833333`
+- Average: `0.5821989`
+- Slightly better than randomly guessing
+
 ## Feature Selection (Ridge)
+
+### Procedure
 Uses the following objective function:
-$$\frac{1}{2N}\lVert \mathbf{Xw} - \mathbf{y} \rVert_2^2 + \alpha \lVert \mathbf{w} \rVert_1$$
-- same as 
+$$\frac{1}{2N}\lVert \mathbf{Xw} - \mathbf{y} \rVert_2^2 + \alpha \lVert \mathbf{w} \rVert_2^2$$
+- same as procedure for lasso regression (see previous section)
+
+### Searching $\alpha$
+![](ridge_alpha.png)
+- MSE keeps decreasing with larger $\alpha$ past 10
+- Feature weights are not as sparse as lasso
+- skipped this method
