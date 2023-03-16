@@ -71,3 +71,8 @@ This corresponds to the following 8 features:
 - `'original_glrlm_GrayLevelNonUniformity'` 
 - `'original_glrlm_LowGrayLevelRunEmphasis'`
 - `'original_glszm_SmallA`
+
+## Feature Selection (Ridge)
+Uses the following objective function:
+$$\frac{1}{2N}\lVert \mathbf{Xw} - \mathbf{y} \rVert_2^2 + \alpha \lVert \mathbf{w} \rVert_1$$
+- same as 
