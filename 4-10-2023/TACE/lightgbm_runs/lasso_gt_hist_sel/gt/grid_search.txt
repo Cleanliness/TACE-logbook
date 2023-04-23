@@ -1,0 +1,12 @@
+({'mean_scores': [], 'models': [], 'hparams': []}, {'score': 46.8498658645154, 'models': [LGBMModel(early_stopping_rounds=100, feature_fraction=0.8999999999999999,
+          learning_rate=0.02, max_depth=4, metric=['mse'], min_data_in_leaf=5,
+          num_iterations=500, num_leaves=32, objective='regression'), LGBMModel(early_stopping_rounds=100, feature_fraction=0.8999999999999999,
+          learning_rate=0.02, max_depth=4, metric=['mse'], min_data_in_leaf=5,
+          num_iterations=500, num_leaves=32, objective='regression'), LGBMModel(early_stopping_rounds=100, feature_fraction=0.8999999999999999,
+          learning_rate=0.02, max_depth=4, metric=['mse'], min_data_in_leaf=5,
+          num_iterations=500, num_leaves=32, objective='regression'), LGBMModel(early_stopping_rounds=100, feature_fraction=0.8999999999999999,
+          learning_rate=0.02, max_depth=4, metric=['mse'], min_data_in_leaf=5,
+          num_iterations=500, num_leaves=32, objective='regression'), LGBMModel(early_stopping_rounds=100, feature_fraction=0.8999999999999999,
+          learning_rate=0.02, max_depth=4, metric=['mse'], min_data_in_leaf=5,
+          num_iterations=500, num_leaves=32, objective='regression')], 'hparams': {'learning_rate': 0.02, 'max_depth': 4, 'min_data_in_leaf': 5, 'num_leaves': 32, 'feature_fraction': 0.8999999999999999}})
+{'diagnostics_Image-original_Mean': 43.0, 'diagnostics_Image-original_Minimum': 21.0, 'diagnostics_Image-original_Maximum': 82.0, 'diagnostics_Mask-original_VoxelNum': 66.2, 'diagnostics_Mask-original_VolumeNum': 53.6, 'original_shape_Elongation': 101.4, 'original_shape_Flatness': 53.2, 'original_shape_LeastAxisLength': 58.4, 'original_shape_MajorAxisLength': 56.8, 'original_shape_Maximum2DDiameterColumn': 91.0}
